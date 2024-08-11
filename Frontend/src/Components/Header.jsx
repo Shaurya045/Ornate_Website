@@ -5,7 +5,7 @@ import HeaderSlider from "./HeaderSlider";
 
 function Header() {
   return (
-    <div className="w-full h-[750px] relative">
+    <div className="w-full h-[750px] relative overflow-hidden">
       <div className="w-full h-full flex">
         <div className="relative w-[50%] h-full bg-gradient-to-tr from-[#FFC296] to-[#EFE6DD] ">
           <h3 className='ornateHome absolute bottom-[30px] right-[100px] text-[170px] font-[400] opacity-[4%] font-["Playfair+Display"] '>
@@ -20,8 +20,12 @@ function Header() {
           />{" "}
         </div>
       </div>
+      <div className="absolute bottom-[-230px] left-[290px] flex flex-row items-center justify-center z-10">
+        <div className="w-[466px] h-[286px] bg-[#F5D8C2] blur-[50px] "></div>
+        <div className="w-[466px] h-[286px] bg-[#8B5E3C] blur-[50px]"></div>
+      </div>
       <HeaderSlider />
-      <div className="absolute left-[39.4%] bottom-[45px] flex flex-row gap-[40px] ">
+      <div className="absolute left-[39.4%] bottom-[45px] flex flex-row gap-[40px] z-20 ">
         <button className="text-white bg-[#B8B3AE] w-[150px] h-[40px] rounded-[10px] text-[16px] font-[500] ">
           LEARN MORE
         </button>

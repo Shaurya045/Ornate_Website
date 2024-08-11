@@ -13,15 +13,26 @@ import Services from "./Pages/Services.jsx";
 import Contact from "./Pages/Contact.jsx";
 import About from "./Pages/About.jsx";
 import Portfolio from "./Pages/Portfolio.jsx";
+import PortfolioBridal from "./Components/PortfolioBridal.jsx";
+import PortfolioParty from "./Components/PortfolioParty.jsx";
+import PortfolioSpecial from "./Components/PortfolioSpecial.jsx";
+import PortfolioPhoto from "./Components/PortfolioPhoto.jsx";
+import ServicesTraning from "./Components/ServicesTraning.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route path="" element={<Home />} />
-      <Route path="services" element={<Services />} />
+      <Route path="services" element={<Services />}>
+        <Route path="training" element={<ServicesTraning />} />
+      </Route>
       <Route path="contact" element={<Contact />} />
-      <Route path="about" element={<About />} />
-      <Route path="portfolio" element={<Portfolio />} />
+      <Route path="portfolio" element={<Portfolio />}>
+        <Route path="" element={<PortfolioBridal />} />
+        <Route path="party" element={<PortfolioParty />} />
+        <Route path="specialoccasion" element={<PortfolioSpecial />} />
+        <Route path="photoshoot" element={<PortfolioPhoto />} />
+      </Route>
     </Route>
   )
 );
