@@ -11,19 +11,20 @@ import {
 import Home from "./Pages/Home.jsx";
 import Services from "./Pages/Services.jsx";
 import Contact from "./Pages/Contact.jsx";
-import About from "./Pages/About.jsx";
 import Portfolio from "./Pages/Portfolio.jsx";
 import PortfolioBridal from "./Components/PortfolioBridal.jsx";
 import PortfolioParty from "./Components/PortfolioParty.jsx";
 import PortfolioSpecial from "./Components/PortfolioSpecial.jsx";
 import PortfolioPhoto from "./Components/PortfolioPhoto.jsx";
 import ServicesTraning from "./Components/ServicesTraning.jsx";
+import ServicesMain from "./Components/ServicesMain.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route path="" element={<Home />} />
       <Route path="services" element={<Services />}>
+        <Route path="" element={<ServicesMain />} />
         <Route path="training" element={<ServicesTraning />} />
       </Route>
       <Route path="contact" element={<Contact />} />

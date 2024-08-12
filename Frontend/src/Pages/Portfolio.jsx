@@ -4,9 +4,9 @@ import PortfolioHeader from "../Components/PortfolioHeader";
 
 function Portfolio() {
   return (
-    <div>
+    <div className="bg-[#EFE6DD]">
       <PortfolioHeader />
-      <div className="bg-[#EFE6DD] pt-[60px] flex flex-col gap-[30px] items-center ">
+      <div className=" pt-[60px] flex flex-col gap-[30px] items-center ">
         <h2 className="text-[30px] font-['Playfair+Display'] font-bold text-[#4A4745] ">
           Creating Timeless Looks for Every Occasion
         </h2>
@@ -70,9 +70,9 @@ function Portfolio() {
             </li>
           </ul>
         </div>
-        <div>
-          <Outlet />
-        </div>
+      </div>
+      <div>
+        <Outlet />
       </div>
     </div>
   );

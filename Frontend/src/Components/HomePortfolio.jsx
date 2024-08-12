@@ -5,11 +5,33 @@ function HomePortfolio() {
   return (
     <div className="w-full mx-0 overflow-hidden flex flex-row ">
       <div className="grid gap-[23px] grid-cols-[repeat(3,1fr)] w-[70%]">
-        <div className="bg-black col-span-1 row-span-2"><img className="object-cover w-full h-full" src={images.homePort1} alt="" /></div>
-        <div className="bg-black col-span-1 row-span-1"><img className="object-cover w-full h-full" src={images.homePort2} alt="" /></div>
-        <div className="bg-black col-span-1 row-span-1"><img className="object-cover w-full h-full" src={images.homePort3} alt="" /></div>
+        <div className="bg-black col-span-1 row-span-2">
+          <img
+            className="object-cover w-full h-full"
+            src={images.homePort1}
+            alt=""
+          />
+        </div>
+        <div className="bg-black col-span-1 row-span-1">
+          <img
+            className="object-cover w-full h-full"
+            src={images.homePort2}
+            alt=""
+          />
+        </div>
+        <div className="bg-black col-span-1 row-span-1">
+          <img
+            className="object-cover w-full h-full"
+            src={images.homePort3}
+            alt=""
+          />
+        </div>
         <div className="bg-black col-span-1 row-span-2 col-start-3 row-start-1">
-        <img className="object-cover w-full h-full" src={images.homePort4} alt="" />
+          <img
+            className="object-cover w-full h-full"
+            src={images.homePort4}
+            alt=""
+          />
         </div>
       </div>
       <div className="bg-[#D3BCA8] relative w-[30%]">
