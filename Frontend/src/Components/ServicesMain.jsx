@@ -1,10 +1,12 @@
 import React from "react";
 import ServicesMainHeader from "./ServicesMainHeader";
+import ServicesMainPackages from "./ServicesMainPackages";
 
 function ServicesMain() {
   return (
-    <div>
+    <div className="bg-[#EFE6DD]">
       <ServicesMainHeader />
+      <ServicesMainPackages />
     </div>
   );
 }

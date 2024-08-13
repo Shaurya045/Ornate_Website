@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "./Button";
 import { icons } from "../assets/asset";
 import { Link, NavLink } from "react-router-dom";
+import DropdownNavbar from "./DropdownNavbar";
 
 function Navbar() {
+  const [dropdown, setDropdown] = useState(false);
   return (
     <div className="relative mt-[30px] mx-[150px] flex flex-col gap-[20px] z-50">
       <div className="flex flex-row justify-between items-center ">
@@ -32,7 +34,10 @@ function Navbar() {
               HOME
             </NavLink>
           </li>
-          <li>
+          <li
+            onMouseEnter={() => setDropdown(true)}
+            onMouseLeave={() => setDropdown(false)}
+          >
             <NavLink
               to="/services"
               className={({ isActive }) =>
@@ -41,17 +46,8 @@ function Navbar() {
             >
               SERVICES
             </NavLink>
+            {dropdown && <DropdownNavbar />}
           </li>
-          {/* <li>
-            <NavLink
-              to="/about"
-              className={({ isActive }) =>
-                `${isActive ? "text-white" : "text-[#4A4745]"} hover:text-white`
-              }
-            >
-              ABOUT
-            </NavLink>
-          </li> */}
           <li>
             <NavLink
               to="/portfolio"
