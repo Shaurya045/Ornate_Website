@@ -8,11 +8,11 @@ function Portfolio() {
     <div className="bg-[#EFE6DD]">
       <PortfolioHeader />
       <div className=" pt-[60px] flex flex-col gap-[30px] items-center ">
-        <h2 className="text-[30px] font-['Playfair+Display'] font-bold text-[#4A4745] ">
+        <h2 className="text-[30px] font-['Playfair+Display'] px-[10px] font-bold text-[#4A4745] text-center max-[768px]:text-[20px] ">
           Creating Timeless Looks for Every Occasion
         </h2>
         <div>
-          <ul className="flex flex-row gap-[120px] text-[20px]">
+          <ul className="flex flex-row gap-[120px] px-[20px] text-[20px] max-[1024px]:text-[15px] max-[1024px]:gap-[15px] text-cente ">
             <li>
               <NavLink
                 to="/portfolio"
@@ -43,17 +43,23 @@ function Portfolio() {
                 Party
               </NavLink>
             </li>
-            <li>
+            <li
+              className={`${
+                active === "SpecialOccasion"
+                  ? "text-white bg-[#D4AF3D] px-[25px] py-[5px] rounded-[5px] "
+                  : "text-[#4A4745] hover:text-[#D4AF3D]"
+              }`}
+            >
               <NavLink
                 to="/portfolio/specialoccasion"
                 onClick={() => setActive("SpecialOccasion")}
-                className={({ isActive }) =>
-                  `${
-                    isActive && active === "SpecialOccasion"
-                      ? "text-white bg-[#D4AF3D] px-[25px] py-[5px] rounded-[5px] "
-                      : "text-[#4A4745] hover:text-[#D4AF3D]"
-                  } `
-                }
+                // className={({ isActive }) =>
+                //   `${
+                //     isActive && active === "SpecialOccasion"
+                //       ? "text-white bg-[#D4AF3D] px-[25px] py-[5px] rounded-[5px] "
+                //       : "text-[#4A4745] hover:text-[#D4AF3D]"
+                //   } `
+                // }
               >
                 Special Occasion
               </NavLink>

@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 function Footer() {
   return (
     <div className="flex flex-col">
-      <div className="bg-[#D4AF37] pl-[100px] pt-[60px] pb-[100px] grid grid-cols-[2fr_0.65fr_1.1fr_1.5fr]">
+      <div className="bg-[#D4AF37] pl-[100px] pt-[60px] pb-[100px] grid lg:grid-cols-[2fr_0.65fr_1.1fr_1.5fr]">
         <div>
           <div className="flex flex-row gap-[15px] items-center">
             <img className="w-[80px] h-[70px]" src={icons.logo} alt="" />
@@ -43,16 +43,6 @@ function Footer() {
                 SERVICES
               </NavLink>
             </li>
-            {/* <li>
-            <NavLink
-              to="/about"
-              className={({ isActive }) =>
-                `${isActive ? "text-white" : "text-[#4A4745]"} hover:text-white`
-              }
-            >
-              ABOUT
-            </NavLink>
-          </li> */}
             <li>
               <NavLink
                 to="/portfolio"

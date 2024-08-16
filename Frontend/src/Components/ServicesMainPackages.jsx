@@ -14,8 +14,8 @@ function ServicesMainPackages() {
     }
   };
   return (
-    <div className={`w-full py-[80px] px-[100px] flex flex-row gap-[80px]`}>
-      <div className="w-[25%] flex flex-col ">
+    <div className={`w-full py-[80px] px-[100px] max-[451px]:px-[30px] max-[821px]:px-[50px] flex flex-row gap-[80px] max-[1025px]:flex-col `}>
+      <div className="w-[25%] flex flex-col max-[1025px]:w-full ">
         <div className="flex flex-col gap-[5px] ">
           <div
             className="flex flex-row p-[10px] items-center justify-center cursor-pointer "
@@ -74,7 +74,7 @@ function ServicesMainPackages() {
         </div>
         <hr className="h-[3px] bg-black " /> */}
       </div>
-      <div className="w-[75%] grid grid-cols-[repeat(2,1fr)] gap-[40px]">
+      <div className="w-[75%] grid min-[724px]:grid-cols-[repeat(2,1fr)] gap-[40px] max-[1025px]:w-full ">
         {package_list.map((item, index) => (
           <div
             key={index}
@@ -89,7 +89,7 @@ function ServicesMainPackages() {
             </div>
             <div className=" absolute bottom-[-60%] left-[-18%] w-[150%] h-[600px] bg-[#8B5E3C] blur-[110px] "></div>
             <div
-              className={` absolute self-end flex flex-col gap-[0px] items-center mb-[45px] `}
+              className={` absolute self-end flex flex-col gap-[0px] items-center mb-[45px] px-[8px] `}
             >
               <h2
                 className="text-[#EFE6DD] font-['Playfair+Display'] font-semibold leading-[50px] text-center [text-shadow:_6px_6px_10px_rgba(0,0,0,0.5)] mb-[20px] "

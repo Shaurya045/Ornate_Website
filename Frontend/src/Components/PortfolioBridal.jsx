@@ -3,7 +3,7 @@ import { images } from "../assets/asset";
 
 function PortfolioBridal() {
   return (
-    <div className="grid gap-[0px] grid-cols-[repeat(3,1fr)] grid-rows-[repeat(10,1fr)] h-[200vh] w-full text-white px-[100px] pt-[60px] pb-[150px] ">
+    <div className="grid gap-[0px] grid-cols-[repeat(3,1fr)] grid-rows-[repeat(10,1fr)] h-[200vh] max-[1024px]:h-[110vh] w-full text-white px-[100px] max-[1024px]:px-[20px] pt-[60px] pb-[150px] ">
       <div className="bg-black col-span-1 row-span-2 duration-[0.5s] hover:scale-[1.05] ">
         <img
           className="object-cover w-full h-full   "
