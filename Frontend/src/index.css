@@ -17,3 +17,18 @@
     transform: rotate(180deg);
     /* text-orientation: upright; */
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+}
+
+.fadeImg{
+  -webkit-mask-image: linear-gradient(to left, #D3BCA8, rgba(211, 188, 168, 0));
+  mask-image: linear-gradient(to left, #D3BCA8, rgba(211, 188, 168, 0));
+}
+

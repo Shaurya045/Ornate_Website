@@ -1,8 +1,9 @@
-import React from "react";
+import React, { act, useState } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import PortfolioHeader from "../Components/PortfolioHeader";
 
 function Portfolio() {
+  const [active, setActive] = useState("Bridal");
   return (
     <div className="bg-[#EFE6DD]">
       <PortfolioHeader />
@@ -15,9 +16,10 @@ function Portfolio() {
             <li>
               <NavLink
                 to="/portfolio"
+                onClick={() => setActive("Bridal")}
                 className={({ isActive }) =>
                   `${
-                    isActive
+                    isActive && active === "Bridal"
                       ? "text-white bg-[#D4AF3D] px-[25px] py-[5px] rounded-[5px] "
                       : "text-[#4A4745] hover:text-[#D4AF3D]"
                   } `
@@ -29,9 +31,10 @@ function Portfolio() {
             <li>
               <NavLink
                 to="/portfolio/party"
+                onClick={() => setActive("Party")}
                 className={({ isActive }) =>
                   `${
-                    isActive
+                    isActive && active === "Party"
                       ? "text-white bg-[#D4AF3D] px-[25px] py-[5px] rounded-[5px] "
                       : "text-[#4A4745] hover:text-[#D4AF3D]"
                   } `
@@ -43,9 +46,10 @@ function Portfolio() {
             <li>
               <NavLink
                 to="/portfolio/specialoccasion"
+                onClick={() => setActive("SpecialOccasion")}
                 className={({ isActive }) =>
                   `${
-                    isActive
+                    isActive && active === "SpecialOccasion"
                       ? "text-white bg-[#D4AF3D] px-[25px] py-[5px] rounded-[5px] "
                       : "text-[#4A4745] hover:text-[#D4AF3D]"
                   } `
@@ -57,9 +61,10 @@ function Portfolio() {
             <li>
               <NavLink
                 to="/portfolio/photoshoot"
+                onClick={() => setActive("Photoshoot")}
                 className={({ isActive }) =>
                   `${
-                    isActive
+                    isActive && active === "Photoshoot"
                       ? "text-white bg-[#D4AF3D] px-[25px] py-[5px] rounded-[5px] "
                       : "text-[#4A4745] hover:text-[#D4AF3D]"
                   } `

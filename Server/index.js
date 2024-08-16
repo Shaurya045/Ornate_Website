@@ -48,7 +48,7 @@ router.post("/contact", (req, res) => {
   const receiverMail = {
     from: name,
     to: process.env.RECIEVER_EMAIL,
-    subject: "More Informaion for Tour Packages",
+    subject: "More Informaion for Makeup Packages",
     html: `<p>Name: ${name}</p>
            <p>Email: ${email}</p>
            <p>Phone: ${phone}</p>
