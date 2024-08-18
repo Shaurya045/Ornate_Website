@@ -53,35 +53,35 @@ function Contact() {
     <div className="bg-[#EFE6DD] pt-[200px] pb-[180px] flex flex-col gap-[60px] items-center ">
       <div className="flex- flex-col text-center ">
         <h1 className='text-[35px] font-["Raleway"] font-bold '>Contact Us</h1>
-        <p className='text-[16px] font-["Raleway"] font-normal '>
+        <p className='text-[16px] px-[10px] font-["Raleway"] font-normal '>
           Any question or remarks? Just write us a message!
         </p>
       </div>
-      <div className=" bg-white w-[80%] h-[630px] rounded-[10px] flex flex-row gap-[30px] p-[10px] ">
-        <div className="bg-[#D4AF37] w-[37%] rounded-s-[10px] relative overflow-hidden p-[40px] flex flex-col gap-[100px] ">
+      <div className=" bg-white w-[80%] max-[1100px]:w-[85%] max-[540px]:w-[90%] h-[630px] max-[980px]:h-[1100px] max-[540px]:h-[1240px] rounded-[10px] flex flex-row max-[980px]:flex-col gap-[20px] p-[10px] ">
+        <div className="bg-[#D4AF37] w-[38%] max-[980px]:h-[470px] max-[540px]:h-[440px] max-[980px]:w-full min-[981px]:rounded-s-[10px] max-[980px]:rounded-t-[10px] relative overflow-hidden p-[40px] max-[540px]:p-[20px] flex flex-col gap-[100px] max-[1028px]:gap-[80px] max-[540px]:gap-[70px] ">
           <div className="flex flex-col text-white gap-[5px] ">
-            <h2 className="font-['Raleway'] text-[25px] font-bold ">
+            <h2 className="font-['Raleway'] text-[25px] max-[540px]:text-[22px] font-bold ">
               Contact Information
             </h2>
-            <p className="font-['Raleway'] text-[16px] font-normal ">
+            <p className="font-['Raleway'] text-[16px] max-[540px]:text-[15px] font-normal ">
               Say something to and hear back
             </p>
           </div>
-          <div className="flex flex-col gap-[40px] text-white">
-            <div className="flex flex-row gap-[10px] items-center">
+          <div className="flex flex-col gap-[40px] max-[540px]:gap-[25px] text-white">
+            <div className="flex flex-row gap-[10px] items-center max-[540px]:text-[14px] ">
               <BiSolidPhoneCall />
               <p>(+91)99340 59935</p>
             </div>
-            <div className="flex flex-row gap-[10px] items-center ">
+            <div className="flex flex-row gap-[10px] items-center max-[540px]:text-[14px] ">
               <IoMdMail />
               <p>info@yourdomain.com</p>
             </div>
-            <div className="flex flex-row gap-[10px] items-center ">
+            <div className="flex flex-row gap-[10px] items-center max-[540px]:text-[14px] ">
               <MdLocationOn />
               <p>address...</p>
             </div>
           </div>
-          <div className="mt-[90px] flex flex-row gap-[20px]">
+          <div className="flex flex-row gap-[20px] mt-auto ">
             <div className="w-[25px] h-[25px] rounded-[50%] bg-black text-white flex items-center justify-center ">
               <FaInstagram />
             </div>
@@ -92,13 +92,13 @@ function Contact() {
               <FaWhatsapp />
             </div>
           </div>
-          <div className="w-[250px] h-[250px] rounded-[50%] absolute bottom-[-20px] right-[-60px] bg-[#79641F] "></div>
-          <div className="w-[130px] h-[130px] rounded-[50%] absolute bottom-[125px] right-[95px] bg-[#f5ca3e98] "></div>
+          <div className="w-[250px] max-[1150px]:w-[230px] max-[540px]:w-[180px] h-[250px] max-[1150px]:h-[230px] max-[540px]:h-[180px] rounded-[50%] absolute bottom-[-20px] max-[1150px]:bottom-[-30px] max-[540px]:bottom-[-35px] right-[-60px] max-[1150px]:right-[-70px] max-[540px]:right-[-65px] bg-[#79641F] "></div>
+          <div className="w-[130px] max-[1150px]:w-[110px] max-[540px]:w-[80px] h-[130px] max-[1150px]:h-[110px] max-[540px]:h-[80px] rounded-[50%] absolute bottom-[125px] max-[1150px]:bottom-[115px] max-[540px]:bottom-[80px] right-[95px] max-[1150px]:right-[75px] max-[540px]:right-[55px] bg-[#f5ca3e98] "></div>
         </div>
-        <div className="w-[61%] py-[50px] px-[50px] relative ">
+        <div className="w-[61%] max-[980px]:w-full py-[50px] max-[540px]:pb-0 px-[50px] max-[540px]:px-[15px] relative ">
           <form onSubmit={handleSubmit}>
             <div className="flex flex-col gap-[60px] ">
-              <div className="flex flex-row gap-[40px] w-full ">
+              <div className="flex flex-row gap-[40px] max-[540px]:flex-col max-[540px]:gap-[60px] w-full ">
                 <div className="relative w-full">
                   <label className="absolute top-[-20px] left-0 text-gray-500 text-sm">
                     First Name
@@ -126,7 +126,7 @@ function Contact() {
                 </div>
               </div>
               <div className="flex flex-row">
-                <div className="flex flex-row gap-[40px] w-full ">
+                <div className="flex flex-row gap-[40px] max-[540px]:flex-col max-[540px]:gap-[60px] w-full ">
                   <div className="relative w-full">
                     <label className="absolute top-[-20px] left-0 text-gray-500 text-sm">
                       Email
@@ -189,7 +189,7 @@ function Contact() {
               </div>
             </div>
           </form>
-          <div className="absolute bottom-[-20px] right-[110px] w-[250px] z-[0] ">
+          <div className="absolute bottom-[-20px] right-[110px] w-[250px] z-[0] max-[980px]:hidden ">
             <img className="w-[250px]" src={icons.contact1} alt="" />
           </div>
         </div>
