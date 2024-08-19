@@ -3,8 +3,8 @@ import { icons, images } from "../assets/asset";
 
 function HomePortfolio() {
   return (
-    <div className="w-full mx-0 overflow-hidden flex flex-row ">
-      <div className="grid gap-[23px] grid-cols-[repeat(3,1fr)] w-[70%]">
+    <div className="w-full mx-0 overflow-hidden flex flex-row max-[1023px]:flex-col ">
+      <div className="grid gap-[23px] max-[700px]:gap-[10px] grid-cols-[repeat(3,1fr)] w-[70%] max-[1023px]:w-full ">
         <div className="bg-black col-span-1 row-span-2">
           <img
             className="object-cover w-full h-full"
@@ -34,30 +34,34 @@ function HomePortfolio() {
           />
         </div>
       </div>
-      <div className="bg-[#D3BCA8] relative w-[30%]">
-        <div className="flex flex-col items-start mt-[20%] ">
-          <img
-            className="h-[150px] w-[200px]"
-            src={icons.homePort_logo}
-            alt=""
-          />
-          <div className="pl-[50px] z-10 flex flex-col gap-[0px]">
-            <h2 className="text-[35px] font-bold font-['Playfair+Display'] max-w-[90%] ">
+      <div className="bg-[#D3BCA8] relative w-[30%] max-[1023px]:w-full ">
+        <div className="flex flex-col items-start max-[1023px]:justify-center max-[1023px]:items-center mt-[20%] max-[1023px]:mt-[3%] ">
+          <div className="h-[150px] w-[200px] max-[570px]:h-[100px] max-[570px]:w-[150px] ">
+            <img
+              className="h-full w-full object-cover"
+              src={icons.homePort_logo}
+              alt=""
+            />
+          </div>
+          <div className="pl-[50px] max-[1023px]:pl-0 max-[570px]:px-[5px] z-10 flex flex-col max-[1023px]:items-center gap-[0px]">
+            <h2 className="text-[35px] font-bold font-['Playfair+Display'] max-w-[90%] max-[1023px]:max-w-[100%] max-[570px]:text-[23px] ">
               TRUSTED & RELIABLE SALON.
             </h2>
-            <p className="text-[30px] font-semibold font-['Lora'] max-w-[80%]">
+            <p className="text-[30px] font-semibold font-['Lora'] max-w-[80%] max-[570px]:text-[20px]">
               PHOTO GALLERY
             </p>
-            <button className="bg-[#D4AF37] w-[200px] h-[50px] text-white font-['Raleway'] font-bold rounded-[10px] mt-[30px] shadow-xl ">
+            <button className="bg-[#D4AF37] w-[200px] max-[570px]:w-[150px] h-[50px] max-[570px]:h-[40px] max-[570px]:text-[15px] text-white font-['Raleway'] font-bold rounded-[10px] mt-[30px] max-[570px]:mt-[20px] mb-[30px] shadow-xl ">
               SEE ALL
             </button>
           </div>
         </div>
-        <img
-          className="absolute bottom-0 z-[0] "
-          src={icons.homePort_flower}
-          alt=""
-        />
+        <div className="absolute bottom-0 z-[0] w-full h-full ">
+          <img
+            className="w-full h-full object-cover "
+            src={icons.homePort_flower}
+            alt=""
+          />
+        </div>
       </div>
     </div>
   );
