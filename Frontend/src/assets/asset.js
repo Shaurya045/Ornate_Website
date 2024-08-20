@@ -19,6 +19,7 @@ import portfolioheadImg from "./Portfolio_HeaderImg.png";
 import trainingheadImg from "./TrainingHeadImg.png";
 import trainingaboutImg from "./TrainingAboutImg.png";
 import traininggridImg from "./TrainingGridImg.png";
+import youtube1 from "./Youtube1.png";
 
 import bridal1 from "./Bridal1.png";
 import bridal2 from "./Bridal2.png";
@@ -70,6 +71,7 @@ export const images = {
   bridal10,
   bridal11,
   bridal12,
+  youtube1,
 };
 
 export const homeCover = { home1 };

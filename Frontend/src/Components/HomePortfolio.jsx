@@ -44,7 +44,7 @@ function HomePortfolio() {
             />
           </div>
           <div className="pl-[50px] max-[1023px]:pl-0 max-[570px]:px-[5px] z-10 flex flex-col max-[1023px]:items-center gap-[0px]">
-            <h2 className="text-[35px] font-bold font-['Playfair+Display'] max-w-[90%] max-[1023px]:max-w-[100%] max-[570px]:text-[23px] ">
+            <h2 className="text-[35px] font-bold font-['Playfair+Display'] max-w-[90%] max-[1023px]:max-w-[100%] max-[570px]:text-[23px] text-center ">
               TRUSTED & RELIABLE SALON.
             </h2>
             <p className="text-[30px] font-semibold font-['Lora'] max-w-[80%] max-[570px]:text-[20px]">

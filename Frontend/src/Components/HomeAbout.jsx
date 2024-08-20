@@ -3,7 +3,7 @@ import { icons } from "../assets/asset";
 
 function HomeAbout() {
   return (
-    <div className="flex flex-col px-[100px] max-[1024px]:px-[70px] max-[701px]:px-[30px] my-[200px] gap-[60px] w-full">
+    <div className="flex flex-col px-[100px] max-[1024px]:px-[70px] max-[701px]:px-[30px] my-[200px] max-[1024px]:my-[160px] max-[701px]:my-[130px] gap-[60px] w-full">
       <div className="flex flex-row gap-[50px] h-full">
         <div className="max-[1024px]:hidden w-[45%] h-full flex flex-col ">
           <div className="w-full h-[500px rounded-[50%] bg-gray-300 overflow-hidden ">
