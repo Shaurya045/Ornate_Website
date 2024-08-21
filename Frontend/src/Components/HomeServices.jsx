@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import { images } from "../assets/asset";
+import { Link } from "react-router-dom";
 
 function HomeServices() {
   const [scrollLeft, setScrollLeft] = useState(0);
@@ -155,9 +156,11 @@ function HomeServices() {
           <span className="text-[40px]">&gt;</span>
         </button>
       </div>
-      <button className="w-[180px] h-[40px] rounded-[5px] max-[712px]:mt-[20px] bg-[#D4AF37] text-white font-semibold ">
-        SEE ALL
-      </button>
+      <Link to="/services">
+        <button className="w-[180px] h-[40px] rounded-[5px] max-[712px]:mt-[20px] bg-[#D4AF37] text-white font-semibold ">
+          SEE ALL
+        </button>
+      </Link>
     </div>
   );
 }

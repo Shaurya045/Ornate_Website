@@ -1,5 +1,6 @@
 import React from "react";
 import { images } from "../assets/asset";
+import { Link } from "react-router-dom";
 
 function PortfolioHeader() {
   return (
@@ -24,7 +25,11 @@ function PortfolioHeader() {
           Our portfolio showcases the magic we weave with every brushstroke,
           bringing dreams to life for every special occasion.
         </p>
-        <button className="w-[220px] h-[50px] rounded-[5px] text-white bg-[#D4AF37] max-[767px]:mt-[20px] ">BOOK NOW</button>
+        <Link to="/services">
+          <button className="w-[220px] h-[50px] rounded-[5px] text-white bg-[#D4AF37] max-[767px]:mt-[20px] ">
+            BOOK NOW
+          </button>
+        </Link>
       </div>
     </div>
   );

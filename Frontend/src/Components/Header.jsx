@@ -2,6 +2,7 @@ import React from "react";
 import { icons } from "../assets/asset";
 import Button from "./Button";
 import HeaderSlider from "./HeaderSlider";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -32,12 +33,16 @@ function Header() {
 
       <div className="absolute top-0 left-0 w-full h-full flex justify-center ">
         <div className="flex flex-row gap-[40px] max-[510px]:gap-[20px] z-20 items-end mb-[50px] px-[10px] ">
-          <button className="text-white bg-[#B8B3AE] w-[150px] max-[510px]:w-[130px] h-[40px] rounded-[10px] text-[16px] max-[510px]:text-[15px] font-semibold ">
-            LEARN MORE
-          </button>
-          <button className="bg-yellow-400 w-[150px] max-[510px]:w-[130px] h-[40px] rounded-[10px] text-[16px] max-[510px]:text-[15px] font-semibold text-white ">
-            BOOK NOW
-          </button>
+          <Link to="/services/training">
+            <button className="text-white bg-[#B8B3AE] w-[150px] max-[510px]:w-[130px] h-[40px] rounded-[10px] text-[16px] max-[510px]:text-[15px] font-semibold ">
+              LEARN MORE
+            </button>
+          </Link>
+          <Link to="/services">
+            <button className="bg-yellow-400 w-[150px] max-[510px]:w-[130px] h-[40px] rounded-[10px] text-[16px] max-[510px]:text-[15px] font-semibold text-white ">
+              BOOK NOW
+            </button>
+          </Link>
         </div>
       </div>
     </div>
