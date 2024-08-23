@@ -74,9 +74,32 @@ export const images = {
   youtube1,
 };
 
-export const homeCover = { home1 };
+export const homeCover = [
+  {
+    image: home1,
+    title: "PHOTOSHOOT MAKEUP",
+    desc: "We do all forms of makeup.",
+  },
+];
 
 export const servicesSlider = { servicesSlider1 };
+
+export const homeTestimonial = [
+  {
+    image1: xyz,
+    image2: abc,
+    name: "Priya",
+    testimonial: "We are very happy with the service.",
+  },
+];
+
+export const serviceTestimonial = [
+  {
+    image: xyz,
+    name: "Priya",
+    testimonial: "We are very happy with the service.",
+  },
+];
 
 export const package_list = [
   {
