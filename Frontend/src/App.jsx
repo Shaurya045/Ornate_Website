@@ -4,10 +4,11 @@ import Footer from "./Components/Footer";
 import ScrollTop from "./Components/ScrollTop";
 import { FaWhatsapp } from "react-icons/fa6";
 import { BiSolidPhoneCall } from "react-icons/bi";
+import UserContextProvider from "./Components/Context/UserContextProvider";
 
 function App() {
   return (
-    <>
+    <UserContextProvider>
       <ScrollTop />
       <Navbar />
       <div className="z-50 fixed bottom-[10%] right-[5%] flex flex-col gap-[10px]">
@@ -30,7 +31,7 @@ function App() {
         <Outlet />
         <Footer />
       </div>
-    </>
+    </UserContextProvider>
   );
 }
 

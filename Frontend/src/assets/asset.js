@@ -86,8 +86,8 @@ export const servicesSlider = { servicesSlider1 };
 
 export const homeTestimonial = [
   {
-    image1: xyz,
-    image2: abc,
+    image1: "xyz",
+    image2: "abc",
     name: "Priya",
     testimonial: "We are very happy with the service.",
   },
@@ -95,7 +95,7 @@ export const homeTestimonial = [
 
 export const serviceTestimonial = [
   {
-    image: xyz,
+    image: "xyz",
     name: "Priya",
     testimonial: "We are very happy with the service.",
   },
