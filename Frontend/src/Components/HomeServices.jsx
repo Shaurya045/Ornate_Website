@@ -81,6 +81,7 @@ function HomeServices() {
                 <img
                   className="h-full w-full object-cover "
                   src={images.homePort3}
+                  loading="lazy"
                   alt=""
                 />
               </div>
@@ -106,6 +107,7 @@ function HomeServices() {
                 <img
                   className="h-full w-full object-cover "
                   src={images.homePort3}
+                  loading="lazy"
                   alt=""
                 />
               </div>
@@ -131,6 +133,7 @@ function HomeServices() {
                 <img
                   className="h-full w-full object-cover "
                   src={images.homePort3}
+                  loading="lazy"
                   alt=""
                 />
               </div>

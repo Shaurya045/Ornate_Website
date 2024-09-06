@@ -1,5 +1,6 @@
 import React from "react";
 import { icons } from "../assets/asset";
+import { Link } from "react-router-dom";
 
 function HomeAbout() {
   return (
@@ -10,6 +11,7 @@ function HomeAbout() {
             <img
               className="w-full h-full object-cover"
               src={icons.aboutImg}
+              loading="lazy"
               alt=""
             />
           </div>
@@ -23,6 +25,7 @@ function HomeAbout() {
             <img
               className="w-full object-cover"
               src={icons.aboutImg}
+              loading="lazy"
               alt=""
             />
           </div>
@@ -36,21 +39,23 @@ function HomeAbout() {
             into profession!
           </p>
           <div className="flex flex-row gap-[50px] max-[701px]:mt-[15px] max-[701px]:gap-[20px] max-[701px]:flex-col max-[701px]:items-center">
-            <button className="text-white bg-[#B8B3AE] w-[250px] h-[60px] max-[701px]:w-[200px] max-[701px]:h-[50px] rounded-[10px] text-[16px] max-[701px]:text-[15px] font-[500] ">
+            {/* <button className="text-white bg-[#B8B3AE] w-[250px] h-[60px] max-[701px]:w-[200px] max-[701px]:h-[50px] rounded-[10px] text-[16px] max-[701px]:text-[15px] font-[500] ">
               LEARN MORE
-            </button>
+            </button> */}
+            <Link to="/services/training">
             <button className="text-white bg-[#D4AF37] w-[250px] h-[60px] max-[701px]:w-[200px] max-[701px]:h-[50px] rounded-[10px] text-[16px] max-[701px]:text-[15px] font-[500] ">
               BOOK A SLOT
-            </button>
+            </button></Link>
           </div>
         </div>
       </div>
       <div className="relative flex flex-row max-[650px]:flex-col max-[650px]:items-center w-full h-[230px] max-[650px]:h-[460px] bg-[#D4AF37] rounded-[12px] overflow-hidden">
         <div className="ml-0 relative flex flex-row w-[320px] max-[1401px]:w-[250px] h-full max-[650px]:h-[210px] max-[650px]:w-full bg-[#B69836] ">
-          <img className="ml-0" src={icons.flower1} alt="" />
+          <img className="ml-0" src={icons.flower1} loading="lazy" alt="" />
           <img
             className="absolute left-[30%] top-[25%] max-[1401px]:w-[120px] max-[1401px]:left-[27%] max-[650px]:left-[39%] max-[540px]:left-[35%] max-[426px]:left-[31%] "
             src={icons.clock}
+            loading="lazy"
             alt=""
           />
         </div>
@@ -78,6 +83,7 @@ function HomeAbout() {
         <img
           className="absolute right-0 bottom-0 h-[150px]"
           src={icons.flower2}
+          loading="lazy"
           alt=""
         />
       </div>

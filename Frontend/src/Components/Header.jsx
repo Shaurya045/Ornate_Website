@@ -17,6 +17,7 @@ function Header() {
           <img
             className="absolute left-0 top-[50px] h-[700px] max-[700px]:h-[550px] opacity-[30%] "
             src={icons.logo2}
+            loading="lazy"
             alt=""
           />{" "}
         </div>

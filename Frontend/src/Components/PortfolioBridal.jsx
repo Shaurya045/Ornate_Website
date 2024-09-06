@@ -8,6 +8,7 @@ function PortfolioBridal() {
         <img
           className="object-cover w-full h-full   "
           src={images.bridal1}
+          loading="lazy"
           alt=""
         />
       </div>
@@ -15,6 +16,7 @@ function PortfolioBridal() {
         <img
           className="object-cover w-full h-full "
           src={images.bridal2}
+          loading="lazy"
           alt=""
         />
       </div>
@@ -22,6 +24,7 @@ function PortfolioBridal() {
         <img
           className="object-cover w-full h-full "
           src={images.bridal3}
+          loading="lazy"
           alt=""
         />
       </div>
@@ -29,6 +32,7 @@ function PortfolioBridal() {
         <img
           className="object-cover w-full h-full"
           src={images.bridal4}
+          loading="lazy"
           alt=""
         />
       </div>
@@ -36,6 +40,7 @@ function PortfolioBridal() {
         <img
           className="object-cover w-full h-full"
           src={images.bridal5}
+          loading="lazy"
           alt=""
         />
       </div>
@@ -43,6 +48,7 @@ function PortfolioBridal() {
         <img
           className="object-cover w-full h-full"
           src={images.bridal6}
+          loading="lazy"
           alt=""
         />
       </div>
@@ -50,6 +56,7 @@ function PortfolioBridal() {
         <img
           className="object-cover w-full h-full"
           src={images.bridal7}
+          loading="lazy"
           alt=""
         />
       </div>
@@ -57,6 +64,7 @@ function PortfolioBridal() {
         <img
           className="object-cover w-full h-full"
           src={images.bridal8}
+          loading="lazy"
           alt=""
         />
       </div>
@@ -64,6 +72,7 @@ function PortfolioBridal() {
         <img
           className="object-cover w-full h-full"
           src={images.bridal9}
+          loading="lazy"
           alt=""
         />
       </div>
@@ -71,6 +80,7 @@ function PortfolioBridal() {
         <img
           className="object-cover w-full h-full"
           src={images.bridal10}
+          loading="lazy"
           alt=""
         />
       </div>
@@ -78,6 +88,7 @@ function PortfolioBridal() {
         <img
           className="object-cover w-full h-full"
           src={images.bridal11}
+          loading="lazy"
           alt=""
         />
       </div>
@@ -85,6 +96,7 @@ function PortfolioBridal() {
         <img
           className="object-cover w-full h-full"
           src={images.bridal12}
+          loading="lazy"
           alt=""
         />
       </div>

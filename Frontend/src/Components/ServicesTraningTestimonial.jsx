@@ -37,6 +37,7 @@ function ServicesTraningTestimonial() {
             <img
               className="ml-auto w-[100px] h-[20px] max-[601px]:w-[70px] max-[601px]:h-[16px] "
               src={icons.stars}
+              loading="lazy"
               alt=""
             />
           </div>
@@ -56,6 +57,7 @@ function ServicesTraningTestimonial() {
             <img
               className="ml-auto w-[100px] h-[20px] max-[601px]:w-[70px] max-[601px]:h-[16px] "
               src={icons.stars}
+              loading="lazy"
               alt=""
             />
           </div>
@@ -75,6 +77,7 @@ function ServicesTraningTestimonial() {
             <img
               className="ml-auto w-[100px] h-[20px] max-[601px]:w-[70px] max-[601px]:h-[16px] "
               src={icons.stars}
+              loading="lazy"
               alt=""
             />
           </div>

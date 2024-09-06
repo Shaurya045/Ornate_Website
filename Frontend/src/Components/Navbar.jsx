@@ -12,7 +12,12 @@ function Navbar() {
     <div className="relative pt-[30px] px-[150px] max-[1024px]:px-[20px] flex flex-col gap-[20px] z-50">
       <div className=" flex flex-row justify-between items-center ">
         <div className="flex flex-row gap-[20px] items-center ">
-          <img className="h-[60px]" src={icons.logo} alt="Logo" />
+          <img
+            className="h-[60px]"
+            src={icons.logo}
+            loading="lazy"
+            alt="Logo"
+          />
           <h1 className="text-[30px] font-[600] font-['Playfair+Display'] max-[1024px]:hidden ">
             Ornate Makeup Studio
           </h1>
@@ -21,9 +26,11 @@ function Navbar() {
           <h3 className="text-[18px] max-[540px]:text-[16px] font-[500] text-white font-['Playfair+Display'] ">
             (+91)99340 59935
           </h3>
-          <button className="bg-yellow-400 w-[150px] h-[40px] rounded-[10px] text-[16px] font-[500] text-white max-[1024px]:hidden ">
-            BOOK NOW
-          </button>
+          <Link to="/services">
+            <button className="bg-yellow-400 w-[150px] h-[40px] rounded-[10px] text-[16px] font-[500] text-white max-[1024px]:hidden ">
+              BOOK NOW
+            </button>
+          </Link>
           <div
             className={`${
               navOpen ? "absolute right-[15px] top-[20px] z-20" : "bg-[#EFE6DD]"

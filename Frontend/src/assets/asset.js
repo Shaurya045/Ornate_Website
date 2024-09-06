@@ -80,15 +80,27 @@ export const homeCover = [
     title: "PHOTOSHOOT MAKEUP",
     desc: "We do all forms of makeup.",
   },
+  {
+    image: home1,
+    title: "Bridal MAKEUP",
+    desc: "We do all forms of makeup.",
+  },
 ];
 
-export const servicesSlider = { servicesSlider1 };
+export const servicesSlider = [servicesSlider1,testimonialBG];
 
 export const homeTestimonial = [
   {
-    image1: "xyz",
-    image2: "abc",
+    image1: homePort2,
+    image2: homePort4,
     name: "Priya",
+    testimonial:
+      "Ornate Makeup Studio transformed me into a vision of beauty on my wedding day. Their attention to detail and artistry is unmatched!",
+  },
+  {
+    image1: homePort2,
+    image2: homePort4,
+    name: "Neha",
     testimonial: "We are very happy with the service.",
   },
 ];
@@ -106,6 +118,7 @@ export const package_list = [
     _id: "1",
     name: "PARTY MAKEUP",
     // image: partyBasic,
+    image: homePort1,
     price: "3,999",
     description: "Basic",
     category: ["Party"],
@@ -114,6 +127,7 @@ export const package_list = [
     _id: "2",
     name: "PARTY MAKEUP",
     // image: partyHD,
+    image: homePort4,
     price: "5,999",
     description: "HD",
     category: ["Party"],
@@ -122,6 +136,7 @@ export const package_list = [
     _id: "3",
     name: "PARTY MAKEUP",
     // image: partyPremiumHD,
+    image: homePort3,
     price: "6,999",
     description: "Premium HD",
     category: ["Party"],
@@ -130,6 +145,7 @@ export const package_list = [
     _id: "4",
     name: "PARTY MAKEUP",
     // image: partyAirbrush,
+    image: homePort2,
     price: "11,000",
     description: "Airbrush",
     category: ["Party"],

@@ -10,6 +10,7 @@ function HomePortfolio() {
           <img
             className="object-cover w-full h-full"
             src={images.homePort1}
+            loading="lazy"
             alt=""
           />
         </div>
@@ -17,6 +18,7 @@ function HomePortfolio() {
           <img
             className="object-cover w-full h-full"
             src={images.homePort2}
+            loading="lazy"
             alt=""
           />
         </div>
@@ -24,6 +26,7 @@ function HomePortfolio() {
           <img
             className="object-cover w-full h-full"
             src={images.homePort3}
+            loading="lazy"
             alt=""
           />
         </div>
@@ -31,6 +34,7 @@ function HomePortfolio() {
           <img
             className="object-cover w-full h-full"
             src={images.homePort4}
+            loading="lazy"
             alt=""
           />
         </div>
@@ -41,6 +45,7 @@ function HomePortfolio() {
             <img
               className="h-full w-full object-cover"
               src={icons.homePort_logo}
+              loading="lazy"
               alt=""
             />
           </div>
@@ -62,6 +67,7 @@ function HomePortfolio() {
           <img
             className="w-full h-full object-cover "
             src={icons.homePort_flower}
+            loading="lazy"
             alt=""
           />
         </div>

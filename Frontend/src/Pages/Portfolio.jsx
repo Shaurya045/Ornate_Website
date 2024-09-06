@@ -1,9 +1,11 @@
 import React, { act, useState } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import PortfolioHeader from "../Components/PortfolioHeader";
+import usePreserveScroll from "../Components/ScrollPreserve";
 
 function Portfolio() {
   const [active, setActive] = useState("Bridal");
+  usePreserveScroll();
   return (
     <div className="bg-[#EFE6DD]">
       <PortfolioHeader />

@@ -12,6 +12,7 @@ function Footer() {
               <img
                 className="w-[80px] h-[70px] max-[1251px]:w-[60px] max-[1251px]:h-[60px] max-[1023px]:w-[70px] "
                 src={icons.logo}
+                loading="lazy"
                 alt=""
               />
               <h2 className="text-[35px] max-[1251px]:text-[32px] max-[1070px]:text-[30px] max-[1023px]:text-[35px] max-[580px]:text-[30px] max-[580px]:leading-[40px] font-['Playfair+Display'] font-semibold text-white  ">

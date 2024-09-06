@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { icons, images } from "../assets/asset";
+import ServicesTrainingBookpopUp from "./ServicesTrainingBookPopUp";
 
 function ServicesTrainingAbout() {
+  const [popUp, setPopUp] = useState(false);
   return (
     <div className="flex flex-col px-[100px] max-[1024px]:px-[70px] max-[701px]:px-[30px] my-[100px] gap-[60px] w-full">
-      <div className="flex flex-row gap-[50px]">
+      <div id="bookSlot" className="flex flex-row gap-[50px]">
         <div className="flex flex-col gap-[40px] max-[701px]:gap-[20px] w-[55%] max-[1024px]:w-full ">
           <h2 className="text-[#4A4745] text-[42px] max-[701px]:text-[35px] font-bold font-['Playfair+Display']">
             About the Program
@@ -22,29 +24,38 @@ function ServicesTrainingAbout() {
             <img
               className="w-full h-full object-cover rounded-[10px] "
               src={images.trainingaboutImg}
+              loading="lazy"
               alt=""
             />
           </div>
           <div className="flex flex-row gap-[50px] max-[701px]:mt-[15px] max-[1024px]:justify-center ">
-            <button className="text-white bg-[#D4AF37] w-[250px] h-[60px] max-[701px]:w-[200px] max-[701px]:h-[50px] rounded-[10px] text-[16px] max-[701px]:text-[15px] font-semibold ">
+            <button
+              onClick={() => {
+                setPopUp(true);
+              }}
+              className="text-white bg-[#D4AF37] w-[250px] h-[60px] max-[701px]:w-[200px] max-[701px]:h-[50px] rounded-[10px] text-[16px] max-[701px]:text-[15px] font-semibold "
+            >
               BOOK A SLOT
             </button>
           </div>
+          {popUp && <ServicesTrainingBookpopUp setPopUp={setPopUp} />}
         </div>
         <div className="w-[45%] h-[600px] rounded-[10px] max-[1024px]:hidden">
           <img
             className="w-full h-full ml-auto object-cover rounded-[10px] "
             src={images.trainingaboutImg}
+            loading="lazy"
             alt=""
           />
         </div>
       </div>
       <div className="relative flex flex-row max-[650px]:flex-col max-[650px]:items-center w-full h-[230px] max-[650px]:h-[460px] bg-[#D4AF37] rounded-[12px] overflow-hidden">
         <div className="ml-0 relative flex flex-row w-[320px] max-[1401px]:w-[250px] h-full max-[650px]:h-[210px] max-[650px]:w-full bg-[#B69836] ">
-          <img className="ml-0" src={icons.flower1} alt="" />
+          <img className="ml-0" src={icons.flower1} loading="lazy" alt="" />
           <img
             className="absolute left-[30%] top-[25%] max-[1401px]:w-[120px] max-[1401px]:left-[27%] max-[650px]:left-[39%] max-[540px]:left-[35%] max-[426px]:left-[31%] "
             src={icons.clock}
+            loading="lazy"
             alt=""
           />
         </div>
@@ -72,6 +83,7 @@ function ServicesTrainingAbout() {
         <img
           className="absolute right-0 bottom-0 h-[150px]"
           src={icons.flower2}
+          loading="lazy"
           alt=""
         />
       </div>

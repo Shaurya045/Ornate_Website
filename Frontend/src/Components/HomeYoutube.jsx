@@ -26,6 +26,7 @@ function HomeYoutube() {
             <img
               className="w-full h-full object-cover rounded-t-[10px]"
               src={images.youtube1}
+              loading="lazy"
               alt=""
             />
           </div>
@@ -45,6 +46,7 @@ function HomeYoutube() {
             <img
               className="w-full h-full object-cover rounded-t-[10px]"
               src={images.youtube1}
+              loading="lazy"
               alt=""
             />
           </div>
@@ -64,6 +66,7 @@ function HomeYoutube() {
             <img
               className="w-full h-full object-cover rounded-t-[10px]"
               src={images.youtube1}
+              loading="lazy"
               alt=""
             />
           </div>
