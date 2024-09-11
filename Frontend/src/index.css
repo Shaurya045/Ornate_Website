@@ -1,21 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-family: 'Great+Vibes', 'Raleway', 'Lora', 'Playfair+Display';
-    scroll-behavior: smooth;
-  }
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Great+Vibes", "Raleway", "Lora", "Playfair+Display";
+  scroll-behavior: smooth;
+}
 
-.ornateHome{
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    /* text-orientation: upright; */
+.ornateHome {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  /* text-orientation: upright; */
 }
 
 .scrollbar-hide::-webkit-scrollbar {
@@ -23,12 +23,65 @@
 }
 
 .scrollbar-hide {
-  -ms-overflow-style: none; 
+  -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
-.fadeImg{
-  -webkit-mask-image: linear-gradient(to left, #D3BCA8, rgba(211, 188, 168, 0));
-  mask-image: linear-gradient(to left, #D3BCA8, rgba(211, 188, 168, 0));
+.fadeImg {
+  -webkit-mask-image: linear-gradient(to left, #d3bca8, rgba(211, 188, 168, 0));
+  mask-image: linear-gradient(to left, #d3bca8, rgba(211, 188, 168, 0));
 }
 
+.phone,.whatsapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  position: relative;
+}
+
+.phone::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: skyblue;
+  z-index: 0; /* Background animation should stay behind the content */
+  animation: radial 2s linear infinite; /* Animation applied only to the background */
+}
+
+.whatsapp::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(35, 240, 35, 0.637);
+  z-index: 0; /* Background animation should stay behind the content */
+  animation: radial 2s linear infinite; /* Animation applied only to the background */
+}
+
+.phone-content,.whatsapp-content {
+  position: relative; /* Keep the content on top */
+  z-index: 60; /* Ensure content stays above the animated background */
+}
+@keyframes radial {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 0.5;
+  }
+}
