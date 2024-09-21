@@ -5,6 +5,7 @@ import ScrollTop from "./Components/ScrollTop";
 import { FaWhatsapp } from "react-icons/fa6";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import UserContextProvider from "./Components/Context/UserContextProvider";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         <Outlet />
         <Footer />
       </div>
+      <Analytics />
     </UserContextProvider>
   );
 }
