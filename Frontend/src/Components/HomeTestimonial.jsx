@@ -1,18 +1,36 @@
-import React, { useState } from "react";
-import { icons, images, homeTestimonial } from "../assets/asset";
+import { useState, useEffect } from "react";
+import axios from "axios";
+import { icons, images } from "../assets/asset";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 function HomeTestimonial() {
   const [slide, setSlide] = useState(0);
+  const [reviews, setReviews] = useState([]);
 
   const nextSlide = () => {
-    setSlide((prev) => (prev === homeTestimonial.length - 1 ? 0 : prev + 1));
+    setSlide((prev) => (prev === reviews.length - 1 ? 0 : prev + 1));
   };
 
   const prevSlide = () => {
-    setSlide((prev) => (prev === 0 ? homeTestimonial.length - 1 : prev - 1));
+    setSlide((prev) => (prev === 0 ? reviews.length - 1 : prev - 1));
   };
+
+  // Fetch all reviews when the component loads
+  useEffect(() => {
+    fetchReviews();
+    // console.log(reviews[2]);
+  });
+
+  const fetchReviews = async () => {
+    try {
+      const response = await axios.get("https://ornate-website.onrender.com/api/reviews");
+      setReviews(response.data);
+    } catch (error) {
+      console.error("Error fetching reviews:", error);
+    }
+  };
+
   return (
     <div
       className="w-full h-[600px] max-[1000px]:h-[750px] max-[520px]:h-[770px] mt-[70px] pb-[20px] pt-[70px] max-[1000px]:pt-[20px] max-[1000px]:pb-[40px] flex flex-row max-[1000px]:flex-col min-[1001px]:justify-center max-[1000px]:items-start max-[1000px]:px-[70px] max-[730px]:px-[40px] max-[565px]:px-[30px] gap-[40px] max-[730px]:gap-[30px] max-[520px]:gap-[20px] "
@@ -50,7 +68,7 @@ function HomeTestimonial() {
         </div>
       </div>
       <div className="min-w-[37%] max-[1000px]:max-w-[90%] relative">
-        {homeTestimonial.map((item, index) => {
+        {reviews.map((item, index) => {
           return (
             <div
               key={index}
@@ -60,14 +78,14 @@ function HomeTestimonial() {
             >
               <div className="relative w-[300px] max-[1200px]:w-[250px] h-[310px] max-[1200px]:h-[300px] max-[520px]:h-[270px] bg-white flex flex-col gap-[15px] z-10 ">
                 <div className="bg-[#D4AF37] mx-[4px] mt-[4px] px-[15px] max-[565px]:px-[10px] py-[8px] flex flex-row items-center gap-[10px] ">
-                  <div className="w-[30px] h-[30px] rounded-[50%] overflow-hidden min-[566px]:hidden ">
+                  {/* <div className="w-[30px] h-[30px] rounded-[50%] overflow-hidden min-[566px]:hidden ">
                     <img
                       className="w-full h-full object-cover"
                       src={item.image2}
                       loading="lazy"
                       alt=""
                     />
-                  </div>
+                  </div> */}
                   <h4 className="text-white max-[520px]:text-[15px] font-['Raleway'] font-semibold">
                     {item.name}
                   </h4>
@@ -79,11 +97,11 @@ function HomeTestimonial() {
                   alt=""
                 />
                 <p className="px-[20px] max-[1200px]:px-[10px] text-[19px] max-[520px]:text-[17px] font-['Great+Vibes'] mt-[10px] max-[520px]:mt-[5px] ">
-                  {item.testimonial}
+                  {item.message}
                 </p>
                 <div className="border-b-[35px] border-b-transparent border-r-[80px] border-r-white absolute bottom-[-33px] left-[40%] "></div>
               </div>
-              <div className="w-[330px] max-[1200px]:w-[280px] h-[330px] max-[1200px]:h-[280px] rounded-[50%] bg-pink-400 absolute top-[30px] left-[230px] max-[1200px]:left-[195px] overflow-hidden max-[565px]:hidden">
+              {/* <div className="w-[330px] max-[1200px]:w-[280px] h-[330px] max-[1200px]:h-[280px] rounded-[50%] bg-pink-400 absolute top-[30px] left-[230px] max-[1200px]:left-[195px] overflow-hidden max-[565px]:hidden">
                 <img
                   className="w-full h-full object-cover"
                   src={item.image1}
@@ -98,7 +116,7 @@ function HomeTestimonial() {
                   loading="lazy"
                   alt=""
                 />
-              </div>
+              </div> */}
             </div>
           );
         })}

@@ -112,9 +112,14 @@ function Footer() {
             CONTACT US
           </h2>
           <ul className="flex flex-col justify-between text-[20px] max-[1251px]:text-[18px] gap-[16px] max-[1023px]:gap-[13px] font-semibold font-['Raleway'] text-white ">
-            <li>Address:</li>
             <li>
-              Mobile: <span className="font-normal">(+91)99340 59935</span>
+              Address:{" "}
+              <span className="font-normal">
+                House No.-4E/9, North S.K.Puri, Patliputra, Patna, Bihar
+              </span>
+            </li>
+            <li>
+              Mobile: <span className="font-normal">(+91)91999 90199</span>
             </li>
           </ul>
         </div>

@@ -65,18 +65,18 @@ function HomeAbout() {
           </h2>
           <div className="flex-flex-col">
             <h3 className="text-[18px] max-[1401px]:text-[16px] font-semibold font-['Raleway'] ">
-              MONDAY TO FRIDAY
+              MONDAY TO SUNDAY
             </h3>
             <p className="text-[25px] max-[1401px]:text-[22px] font-bold font-['Raleway'] ">
-              09:00 AM - 06:00 PM
+              10:30 AM - 07:30 PM
             </p>
           </div>
           <div className="flex flex-col">
             <h3 className="text-[18px] max-[1401px]:text-[16px] font-semibold font-['Raleway'] ">
-              SATURDAY
+              THURSDAY
             </h3>
             <p className="text-[25px] max-[1401px]:text-[22px] font-bold font-['Raleway'] ">
-              11:00 AM - 03:00 PM
+              12:00 PM - 07:30 PM
             </p>
           </div>
         </div>

@@ -1,68 +1,21 @@
 import express from "express";
-const router = express.Router();
 import cors from "cors";
-import nodemailer from "nodemailer";
+import contactRoutes from "./routes/contact.js";
+import reviewRoutes from "./routes/review.js";
 import { config } from "dotenv";
 config();
+// console.log("User:", process.env.AUTHUSER);
+// console.log("Password:", process.env.AUTHPASS);
 
-// server used to send send emails
 const app = express();
-app.use(
-  cors({
-    origin: "*",
-  })
-);
+const PORT = process.env.PORT || 5000;
+
+app.use(cors({ origin: "*" }));
 app.use(express.json());
-app.use("/", router);
 
-// console.log(process.env.EMAIL_USER);
-// console.log(process.env.EMAIL_PASS);
+app.use("/api/contact", contactRoutes);
+app.use("/api/reviews", reviewRoutes);
 
-const contactEmail = nodemailer.createTransport({
-  service: "gmail",
-  secure: true,
-  port: 465,
-  auth: {
-    user: process.env.AUTHUSER,
-    pass: process.env.AUTHPASS,
-  },
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
-
-contactEmail.verify((error) => {
-  if (error) {
-    console.log(error);
-  } else {
-    console.log("Ready to Send");
-  }
-});
-
-router.get("/contact", (req, res) => {
-  res.send("contact");
-});
-
-router.post("/contact", (req, res) => {
-  const name = req.body.firstName + " " + req.body.lastName;
-  const email = req.body.email;
-  const message = req.body.message;
-  const phone = req.body.phone;
-  const receiverMail = {
-    from: name,
-    to: process.env.RECIEVER_EMAIL,
-    subject: "More Informaion for Makeup Packages",
-    html: `<p>Name: ${name}</p>
-           <p>Email: ${email}</p>
-           <p>Phone: ${phone}</p>
-           <p>Message: ${message}</p>`,
-  };
-  contactEmail.sendMail(receiverMail, (error) => {
-    if (error) {
-      res.json(error);
-    } else {
-      res.json({ code: 200, status: "Message Sent" });
-    }
-  });
-});
-
-app.listen(process.env.PORT, () =>
-  console.log(`Server Running at port ${process.env.PORT}`)
-);

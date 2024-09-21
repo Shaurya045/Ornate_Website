@@ -82,11 +82,11 @@ function HomeYoutube() {
           </div>
         </div>
       </div>
-      <a href="https://www.youtube.com/@OrnatemakeupStudio" target="_blank">
+      <Link href="https://www.youtube.com/@OrnatemakeupStudio" target="_blank">
         <button className="bg-[#D4AF37] w-[180px] h-[45px] text-white font-semibold font-['Raleway'] rounded-[10px] shadow-lg ">
           SEE ALL
         </button>
-      </a>
+      </Link>
     </div>
   );
 }

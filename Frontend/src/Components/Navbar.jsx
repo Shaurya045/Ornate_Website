@@ -26,7 +26,7 @@ function Navbar() {
         </Link>
         <div className="flex flex-row gap-[20px] max-[540px]:gap-[3px] items-center ">
           <h3 className="text-[18px] max-[540px]:text-[13px] font-[500] text-white font-['Playfair+Display'] ">
-            (+91)99340 59935
+            (+91)91999 90199
           </h3>
           <Link to="/services">
             <button className="bg-yellow-400 w-[150px] h-[40px] rounded-[10px] text-[16px] font-[500] text-white max-[1024px]:hidden ">

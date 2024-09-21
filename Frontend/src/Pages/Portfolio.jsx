@@ -1,4 +1,4 @@
-import React, { act, useState } from "react";
+import { useState } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import PortfolioHeader from "../Components/PortfolioHeader";
 import usePreserveScroll from "../Components/ScrollPreserve";
@@ -14,7 +14,7 @@ function Portfolio() {
           Creating Timeless Looks for Every Occasion
         </h2>
         <div>
-          <ul className="flex flex-row gap-[120px] px-[20px] text-[20px] max-[1024px]:text-[15px] max-[1024px]:gap-[15px] text-cente ">
+          <ul className="flex flex-row flex-wrap gap-[120px] px-[20px] text-[20px] max-[1024px]:text-[15px] max-[1024px]:gap-[15px] text-center ">
             <li>
               <NavLink
                 to="/portfolio"
@@ -79,6 +79,21 @@ function Portfolio() {
                 }
               >
                 Photoshoot
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/portfolio/commercial"
+                onClick={() => setActive("Photoshoot")}
+                className={({ isActive }) =>
+                  `${
+                    isActive && active === "Photoshoot"
+                      ? "text-white bg-[#D4AF3D] px-[25px] py-[5px] rounded-[5px] "
+                      : "text-[#4A4745] hover:text-[#D4AF3D]"
+                  } `
+                }
+              >
+                Commercial
               </NavLink>
             </li>
           </ul>

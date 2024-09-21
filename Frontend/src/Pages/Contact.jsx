@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { IoMdMail } from "react-icons/io";
 import { MdLocationOn } from "react-icons/md";
@@ -70,27 +71,43 @@ function Contact() {
           <div className="flex flex-col gap-[40px] max-[540px]:gap-[25px] text-white">
             <div className="flex flex-row gap-[10px] items-center max-[540px]:text-[14px] ">
               <BiSolidPhoneCall />
-              <p>(+91)99340 59935</p>
+              <p>(+91)91999 90199</p>
             </div>
             <div className="flex flex-row gap-[10px] items-center max-[540px]:text-[14px] ">
               <IoMdMail />
-              <p>info@yourdomain.com</p>
+              <p>info@ornatemakeup.com</p>
             </div>
             <div className="flex flex-row gap-[10px] items-center max-[540px]:text-[14px] ">
               <MdLocationOn />
-              <p>address...</p>
+              <p>House No.-4E/9, North S.K.Puri, Patliputra, Patna, Bihar</p>
             </div>
           </div>
           <div className="flex flex-row gap-[20px] mt-auto ">
-            <div className="w-[25px] h-[25px] rounded-[50%] bg-black text-white flex items-center justify-center ">
-              <FaInstagram />
-            </div>
-            <div className="w-[25px] h-[25px] rounded-[50%] bg-white text-black flex items-center justify-center ">
-              <FaYoutube />
-            </div>
-            <div className="w-[25px] h-[25px] rounded-[50%] bg-black text-white flex items-center justify-center ">
-              <FaWhatsapp />
-            </div>
+            <Link
+              to="https://www.instagram.com/ornate_makeupartist/"
+              target="blank"
+            >
+              <div className="w-[25px] h-[25px] rounded-[50%] bg-black text-white flex items-center justify-center ">
+                <FaInstagram />
+              </div>
+            </Link>
+            <Link
+              to="https://www.youtube.com/@OrnatemakeupStudio"
+              target="blank"
+            >
+              <div className="w-[25px] h-[25px] rounded-[50%] bg-white text-black flex items-center justify-center ">
+                <FaYoutube />
+              </div>
+            </Link>
+            <a
+              href={`https://wa.me/918210080108?text=Hi, I want to know more information for the makeup and its packages `}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="w-[25px] h-[25px] rounded-[50%] bg-black text-white flex items-center justify-center ">
+                <FaWhatsapp />
+              </div>
+            </a>
           </div>
           <div className="w-[250px] max-[1150px]:w-[230px] max-[540px]:w-[180px] h-[250px] max-[1150px]:h-[230px] max-[540px]:h-[180px] rounded-[50%] absolute bottom-[-20px] max-[1150px]:bottom-[-30px] max-[540px]:bottom-[-35px] right-[-60px] max-[1150px]:right-[-70px] max-[540px]:right-[-65px] bg-[#79641F] "></div>
           <div className="w-[130px] max-[1150px]:w-[110px] max-[540px]:w-[80px] h-[130px] max-[1150px]:h-[110px] max-[540px]:h-[80px] rounded-[50%] absolute bottom-[125px] max-[1150px]:bottom-[115px] max-[540px]:bottom-[80px] right-[95px] max-[1150px]:right-[75px] max-[540px]:right-[55px] bg-[#f5ca3e98] "></div>

@@ -82,28 +82,28 @@ export const homeCover = [
   },
   {
     image: home1,
-    title: "Bridal MAKEUP",
+    title: "BRIDAL MAKEUP",
     desc: "We do all forms of makeup.",
   },
 ];
 
 export const servicesSlider = [servicesSlider1,testimonialBG];
 
-export const homeTestimonial = [
-  {
-    image1: homePort2,
-    image2: homePort4,
-    name: "Priya",
-    testimonial:
-      "Ornate Makeup Studio transformed me into a vision of beauty on my wedding day. Their attention to detail and artistry is unmatched!",
-  },
-  {
-    image1: homePort2,
-    image2: homePort4,
-    name: "Neha",
-    testimonial: "We are very happy with the service.",
-  },
-];
+// export const homeTestimonial = [
+//   {
+//     image1: homePort2,
+//     image2: homePort4,
+//     name: "Priya",
+//     testimonial:
+//       "Ornate Makeup Studio transformed me into a vision of beauty on my wedding day. Their attention to detail and artistry is unmatched!",
+//   },
+//   {
+//     image1: homePort2,
+//     image2: homePort4,
+//     name: "Neha",
+//     testimonial: "We are very happy with the service.",
+//   },
+// ];
 
 export const serviceTestimonial = [
   {

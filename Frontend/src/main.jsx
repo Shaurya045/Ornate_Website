@@ -18,6 +18,7 @@ import PortfolioSpecial from "./Components/PortfolioSpecial.jsx";
 import PortfolioPhoto from "./Components/PortfolioPhoto.jsx";
 import ServicesTraning from "./Components/ServicesTraning.jsx";
 import ServicesMain from "./Components/ServicesMain.jsx";
+import PortfolioCommercial from "./Components/PortfolioCommercial.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -33,6 +34,7 @@ const router = createBrowserRouter(
         <Route path="party" element={<PortfolioParty />} />
         <Route path="specialoccasion" element={<PortfolioSpecial />} />
         <Route path="photoshoot" element={<PortfolioPhoto />} />
+        <Route path="commercial" element={<PortfolioCommercial />} />
       </Route>
     </Route>
   )
