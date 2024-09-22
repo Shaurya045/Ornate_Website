@@ -5,9 +5,14 @@ function HomeAddReview() {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [reviews, setReviews] = useState([]);
+  const [statusMessage, setStatusMessage] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!name || !message) {
+      setStatusMessage("Please fill out all fields.");
+      return;
+    }
     const newReview = { name, message, date: new Date().toLocaleDateString() };
     addReview(newReview);
     setName("");
@@ -21,10 +26,13 @@ function HomeAddReview() {
 
   const fetchReviews = async () => {
     try {
-      const response = await axios.get("https://ornate-website.onrender.com/api/reviews");
+      const response = await axios.get(
+        "https://ornate-website.onrender.com/api/reviews"
+      );
       setReviews(response.data);
     } catch (error) {
       console.error("Error fetching reviews:", error);
+      setStatusMessage("Error fetching reviews. Please try again later.");
     }
   };
 
@@ -35,10 +43,14 @@ function HomeAddReview() {
         newReview
       );
       if (response.status === 201) {
+        setStatusMessage("Review submitted successfully!");
         fetchReviews(); // Re-fetch reviews to get the updated list
+      } else {
+        setStatusMessage("Failed to submit review. Please try again.");
       }
     } catch (error) {
       console.error("Error adding review:", error);
+      setStatusMessage("Error adding review. Please try again.");
     }
   };
 
@@ -81,6 +93,7 @@ function HomeAddReview() {
           >
             Submit
           </button>
+          {statusMessage && <p>{statusMessage}</p>}
         </div>
       </form>
     </div>
