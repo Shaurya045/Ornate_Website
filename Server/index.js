@@ -22,6 +22,10 @@ mongoose
 app.use("/api/contact", contactRoutes);
 app.use("/api/reviews", reviewRoutes);
 
+app.get("/", (req, res) => {
+  res.send("Backend is up and running");
+});
+
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
