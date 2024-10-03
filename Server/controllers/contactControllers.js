@@ -34,11 +34,14 @@ export const sendContactEmail = (req, res) => {
            <p>Message: ${message}</p>`,
   };
 
-  contactEmail.sendMail(receiverMail, (error) => {
+  contactEmail.sendMail(receiverMail, (error, info) => {
     if (error) {
-      res.status(500).json(error);
+      console.error("Error sending email:", error); // Log the error
+      return res.status(500).json({success: false, message: "Error sending message", error });
     } else {
-      res.status(200).json({ message: "Message Sent" });
+      console.log("Email sent:", info.response); // Log success info
+      return res.status(200).json({success: true, message: "Message Sent" });
     }
   });
+  
 };

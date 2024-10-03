@@ -29,8 +29,25 @@ function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!/^\S+@\S+\.\S+$/.test(formDetails.email)) {
+      setStatus({
+        success: false,
+        message: "Please enter a valid email address",
+      });
+      return;
+    }
+
+    if (formDetails.phone.length < 10) {
+      setStatus({
+        success: false,
+        message: "Phone number must be at least 10 digits",
+      });
+      return;
+    }
+
     setButtonText("Sending...");
-    let response = await fetch("https://ornate-website.onrender.com/contact", {
+    let response = await fetch("https://ornate-website.onrender.com/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
@@ -39,12 +56,13 @@ function Contact() {
     });
     setButtonText("Send Message");
     let result = await response.json();
+    // console.log(result);
     setFormDetails(formInitialDetails);
-    if (result.code === 200) {
-      setStatus({ succes: true, message: "Message sent successfully!!" });
+    if (result.success) {
+      setStatus({ success: true, message: "Message sent successfully!!" });
     } else {
       setStatus({
-        succes: false,
+        success: false,
         message: "Something went wrong, please try again later.",
       });
     }
@@ -197,9 +215,7 @@ function Contact() {
 
               <div className="text-green-500 text-[20px] mb-[20px] z-30 ">
                 {status.message && (
-                  <p
-                    className={status.success === false ? "danger" : "success"}
-                  >
+                  <p className={status.success ? "success" : "danger"}>
                     {status.message}
                   </p>
                 )}
@@ -224,7 +240,7 @@ function Contact() {
           height="450"
           allowfullscreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          // referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
     </div>
