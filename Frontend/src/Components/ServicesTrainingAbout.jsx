@@ -52,6 +52,36 @@ function ServicesTrainingAbout() {
       <div className="relative flex flex-row max-[650px]:flex-col max-[650px]:items-center w-full h-[230px] max-[650px]:h-[460px] bg-[#D4AF37] rounded-[12px] overflow-hidden">
         <div className="ml-0 relative flex flex-row w-[320px] max-[1401px]:w-[250px] h-full max-[650px]:h-[210px] max-[650px]:w-full bg-[#B69836] ">
           <img className="ml-0" src={icons.flower1} loading="lazy" alt="" />
+          <div className="absolute left-[30%] top-[37%] max-[1401px]:w-[120px] max-[1401px]:left-[27%] max-[650px]:left-[39%] max-[540px]:left-[35%] max-[426px]:left-[31%] ">
+            <h2 className="text-[35px] max-[1401px]:text-[30px] font-bold font-['Playfair+Display'] text-white ">
+              COURSES
+            </h2>
+          </div>
+        </div>
+        <div className="pl-[40px] max-[650px]:pl-[20px] max-[650px]:pt-[25px] flex flex-row gap-[20px] max-[1100px]:flex-col max-[1100px]:gap-[10px] items-center max-[1100px]:justify-center max-[1100px]:items-start text-white z-10">
+          <p className="text-[25px] max-[1401px]:text-[22px] font-bold font-['Raleway'] ">
+            Makeup Course
+          </p>
+          <p className="text-[25px] max-[1401px]:text-[22px] font-bold font-['Raleway'] ">
+            Nail Extension Course
+          </p>
+          <p className="text-[25px] max-[1401px]:text-[22px] font-bold font-['Raleway'] ">
+            Hair Styling Course
+          </p>
+          <p className="text-[25px] max-[1401px]:text-[22px] font-bold font-['Raleway'] ">
+            Eye Lashes Extension Course
+          </p>
+        </div>
+        <img
+          className="absolute right-0 bottom-0 h-[150px]"
+          src={icons.flower2}
+          loading="lazy"
+          alt=""
+        />
+      </div>
+      <div className="relative flex flex-row max-[650px]:flex-col max-[650px]:items-center w-full h-[230px] max-[650px]:h-[460px] bg-[#D4AF37] rounded-[12px] overflow-hidden">
+        <div className="ml-0 relative flex flex-row w-[320px] max-[1401px]:w-[250px] h-full max-[650px]:h-[210px] max-[650px]:w-full bg-[#B69836] ">
+          <img className="ml-0" src={icons.flower1} loading="lazy" alt="" />
           <img
             className="absolute left-[30%] top-[25%] max-[1401px]:w-[120px] max-[1401px]:left-[27%] max-[650px]:left-[39%] max-[540px]:left-[35%] max-[426px]:left-[31%] "
             src={icons.clock}

@@ -36,6 +36,38 @@ import bridal12 from "./Bridal12.png";
 
 import servicesSlider1 from "./ServicesSliderImg1.png";
 
+// PORTFOLIO PHOTOS
+
+// Bridal Photos
+import Bridal1 from "./Bridal/Bridal1.jpeg";
+import Bridal2 from "./Bridal/Bridal2.jpeg";
+import Bridal3 from "./Bridal/Bridal3.jpeg";
+import Bridal4 from "./Bridal/Bridal4.jpeg";
+import Bridal5 from "./Bridal/Bridal5.jpeg";
+import Bridal6 from "./Bridal/Bridal6.jpeg";
+import Bridal7 from "./Bridal/Bridal7.jpeg";
+import Bridal8 from "./Bridal/Bridal8.jpeg";
+import Bridal9 from "./Bridal/Bridal9.jpeg";
+
+// Photoshoot Photos
+import Photoshoot1 from "./Photoshoot/Photoshoot1.JPG";
+import Photoshoot2 from "./Photoshoot/Photoshoot2.JPG";
+import Photoshoot3 from "./Photoshoot/Photoshoot3.JPG";
+import Photoshoot4 from "./Photoshoot/Photoshoot4.JPG";
+import Photoshoot5 from "./Photoshoot/Photoshoot5.JPG";
+import Photoshoot6 from "./Photoshoot/Photoshoot6.jpeg";
+import Photoshoot7 from "./Photoshoot/Photoshoot7.jpeg";
+import Photoshoot8 from "./Photoshoot/Photoshoot8.jpeg";
+import Photoshoot9 from "./Photoshoot/Photoshoot9.jpeg";
+import Photoshoot10 from "./Photoshoot/Photoshoot10.jpeg";
+import Photoshoot11 from "./Photoshoot/Photoshoot11.jpeg";
+import Photoshoot12 from "./Photoshoot/Photoshoot12.jpeg";
+
+// Special Occasion Photos
+import Special1 from "./Special_Occasion/Special1.jpeg";
+import Special2 from "./Special_Occasion/Special2.jpeg";
+import Special3 from "./Special_Occasion/Special3.jpeg";
+
 export const icons = {
   logo,
   logo2,
@@ -87,7 +119,7 @@ export const homeCover = [
   },
 ];
 
-export const servicesSlider = [servicesSlider1,testimonialBG];
+export const servicesSlider = [servicesSlider1, testimonialBG];
 
 // export const homeTestimonial = [
 //   {
@@ -223,3 +255,41 @@ export const package_list = [
     category: ["Bridal"],
   },
 ];
+
+// PORTFOLIO EXPORT PHOTOS
+
+// Bridal Export
+export const bridalPhotos = {
+  Bridal1,
+  Bridal2,
+  Bridal3,
+  Bridal4,
+  Bridal5,
+  Bridal6,
+  Bridal7,
+  Bridal8,
+  Bridal9,
+};
+
+// Photoshoot Export
+export const photoshootPhotos = {
+  Photoshoot1,
+  Photoshoot2,
+  Photoshoot3,
+  Photoshoot4,
+  Photoshoot5,
+  Photoshoot6,
+  Photoshoot7,
+  Photoshoot8,
+  Photoshoot9,
+  Photoshoot10,
+  Photoshoot11,
+  Photoshoot12,
+};
+
+// Special Occasion Export
+export const specialOccasionPhotos = {
+  Special1,
+  Special2,
+  Special3,
+};

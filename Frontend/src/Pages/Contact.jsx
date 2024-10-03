@@ -219,7 +219,7 @@ function Contact() {
       <div className="w-[80%] max-[1100px]:w-[85%] max-[540px]:w-[90%] rounded-[10px] overflow-hidden shadow-black shadow-[0px_30px_60px_-20px_rgba(0,0,0,0.37)] ">
         <iframe
           className="border-[#D4AF37] border-[4px] rounded-[10px] "
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d899.3922964033579!2d85.11031986956493!3d25.61922819859013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed5828cdde6b15%3A0xb7fae52c62b2a2b2!2sAnmol&#39;s%20Chandra%20Regency!5e0!3m2!1sen!2sin!4v1725653798250!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1223.8875891412217!2d85.11016687516381!3d25.61887982525181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed597c731b893b%3A0xb61ffb3aaaee9751!2sHouse%2C%204E%2F9%2C%20near%20Ornate%20makeup%20studio%20and%20academy%2C%20North%20Sri%20Krishna%20Puri%2C%20Patna%2C%20Bihar%20800013!5e0!3m2!1sen!2sin!4v1727916068683!5m2!1sen!2sin"
           width="100%"
           height="450"
           allowfullscreen=""

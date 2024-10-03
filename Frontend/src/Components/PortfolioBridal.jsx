@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { images } from "../assets/asset";
+import { images, bridalPhotos } from "../assets/asset";
 
 function PortfolioBridal() {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -17,99 +17,99 @@ function PortfolioBridal() {
       <div className="grid gap-[0px] grid-cols-[repeat(3,1fr)] grid-rows-[repeat(10,1fr)] h-[200vh] max-[1024px]:h-[110vh] w-full text-white px-[100px] max-[1024px]:px-[20px] pt-[60px] pb-[150px] ">
         <div
           className="bg-black col-span-1 row-span-2 duration-[0.5s] hover:scale-[1.05] "
-          onClick={() => openImage(images.bridal1)}
+          onClick={() => openImage(bridalPhotos.Bridal2)}
         >
           <img
             className="object-cover w-full h-full   "
-            src={images.bridal1}
+            src={bridalPhotos.Bridal2}
             loading="lazy"
             alt=""
           />
         </div>
         <div
           className="bg-black col-span-1 row-span-4 duration-[0.5s] hover:scale-[1.05] "
-          onClick={() => openImage(images.bridal2)}
+          onClick={() => openImage(bridalPhotos.Bridal1)}
         >
           <img
             className="object-cover w-full h-full "
-            src={images.bridal2}
+            src={bridalPhotos.Bridal1}
             loading="lazy"
             alt=""
           />
         </div>
         <div
           className="bg-black col-span-1 row-span-2 duration-[0.5s] hover:scale-[1.05] "
-          onClick={() => openImage(images.bridal3)}
+          onClick={() => openImage(bridalPhotos.Bridal3)}
         >
           <img
             className="object-cover w-full h-full "
-            src={images.bridal3}
+            src={bridalPhotos.Bridal3}
             loading="lazy"
             alt=""
           />
         </div>
         <div
           className="bg-black col-span-1 row-span-3 duration-[0.5s] hover:scale-[1.05] "
-          onClick={() => openImage(images.bridal4)}
+          onClick={() => openImage(bridalPhotos.Bridal4)}
         >
           <img
             className="object-cover w-full h-full"
-            src={images.bridal4}
+            src={bridalPhotos.Bridal4}
             loading="lazy"
             alt=""
           />
         </div>
         <div
           className="bg-black col-span-1 row-span-2 col-start-2  duration-[0.5s] hover:scale-[1.05] "
-          onClick={() => openImage(images.bridal5)}
+          onClick={() => openImage(bridalPhotos.Bridal5)}
         >
           <img
             className="object-cover w-full h-full"
-            src={images.bridal5}
+            src={bridalPhotos.Bridal5}
             loading="lazy"
             alt=""
           />
         </div>
         <div
           className="bg-black col-span-1 row-span-3 col-start-3 row-start-3 duration-[0.5s] hover:scale-[1.05] "
-          onClick={() => openImage(images.bridal6)}
+          onClick={() => openImage(bridalPhotos.Bridal8)}
         >
           <img
             className="object-cover w-full h-full"
-            src={images.bridal6}
+            src={bridalPhotos.Bridal8}
             loading="lazy"
             alt=""
           />
         </div>
         <div
           className="bg-black col-span-1 row-span-3 duration-[0.5s] hover:scale-[1.05] "
-          onClick={() => openImage(images.bridal7)}
+          onClick={() => openImage(bridalPhotos.Bridal6)}
         >
           <img
             className="object-cover w-full h-full"
-            src={images.bridal7}
+            src={bridalPhotos.Bridal6}
             loading="lazy"
             alt=""
           />
         </div>
         <div
           className="bg-black col-span-1 row-span-2 col-start-2 duration-[0.5s] hover:scale-[1.05] "
-          onClick={() => openImage(images.bridal8)}
+          onClick={() => openImage(bridalPhotos.Bridal7)}
         >
           <img
             className="object-cover w-full h-full"
-            src={images.bridal8}
+            src={bridalPhotos.Bridal7}
             loading="lazy"
             alt=""
           />
         </div>
         <div
           className="bg-black col-span-1 row-span-4 col-start-3 row-start-6 duration-[0.5s] hover:scale-[1.05]"
-          onClick={() => openImage(images.bridal9)}
+          onClick={() => openImage(bridalPhotos.Bridal9)}
         >
           <img
             className="object-cover w-full h-full"
-            src={images.bridal9}
+            src={bridalPhotos.Bridal9}
             loading="lazy"
             alt=""
           />
