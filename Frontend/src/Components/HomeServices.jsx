@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
-import { images } from "../assets/asset";
+import { images, bridalPhotos, partyPhotos } from "../assets/asset";
 import { Link } from "react-router-dom";
 
 function HomeServices() {
@@ -80,7 +80,7 @@ function HomeServices() {
               <div className="absolute right-0 top-0 h-full w-[50%] fadeImg ">
                 <img
                   className="h-full w-full object-cover "
-                  src={images.homePort3}
+                  src={bridalPhotos.Bridal10}
                   loading="lazy"
                   alt=""
                 />
@@ -91,7 +91,7 @@ function HomeServices() {
                   10% off
                 </h3>
                 <h2 className=" font-['Lora'] font-normal text-[35px] max-[712px]:text-[25px] text-[#4A4745] text-start ">
-                  High Fashion Makeup
+                  Bridal Makeup
                 </h2>
                 <button className="w-[130px] max-[712px]:w-[115px] h-[40px] bg-[#D4AF37] rounded-[10px] text-[15px] max-[712px]:text-[14px] text-white font-semibold ">
                   BOOK NOW
@@ -117,7 +117,7 @@ function HomeServices() {
                   10% off
                 </h3>
                 <h2 className=" font-['Lora'] font-normal text-[35px] max-[712px]:text-[25px] text-[#4A4745] text-start ">
-                  High Fashion Makeup
+                  Photoshoot Makeup
                 </h2>
                 <button className="w-[130px] max-[712px]:w-[115px] h-[40px] bg-[#D4AF37] rounded-[10px] text-[15px] max-[712px]:text-[14px] text-white font-semibold ">
                   BOOK NOW
@@ -132,7 +132,7 @@ function HomeServices() {
               <div className="absolute right-0 top-0 h-full w-[50%] fadeImg ">
                 <img
                   className="h-full w-full object-cover "
-                  src={images.homePort3}
+                  src={partyPhotos.Party4}
                   loading="lazy"
                   alt=""
                 />
@@ -143,7 +143,7 @@ function HomeServices() {
                   10% off
                 </h3>
                 <h2 className=" font-['Lora'] font-normal text-[35px] max-[712px]:text-[25px] text-[#4A4745] text-start ">
-                  High Fashion Makeup
+                  Party Makeup
                 </h2>
                 <button className="w-[130px] max-[712px]:w-[115px] h-[40px] bg-[#D4AF37] rounded-[10px] text-[15px] max-[712px]:text-[14px] text-white font-semibold ">
                   BOOK NOW

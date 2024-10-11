@@ -11,6 +11,8 @@ import stars from "./Stars_Icon.png";
 import contact1 from "./Contact_Icon1.png";
 
 import home1 from "./Home_cover1.png";
+import home2 from "./Home_Cover2.PNG";
+import home3 from "./Home_Cover3.png";
 import homePort1 from "./Home_Portfolio1.png";
 import homePort2 from "./Home_Portfolio2.png";
 import homePort3 from "./Home_Portfolio3.png";
@@ -20,6 +22,8 @@ import trainingheadImg from "./TrainingHeadImg.png";
 import trainingaboutImg from "./TrainingAboutImg.png";
 import traininggridImg from "./TrainingGridImg.png";
 import youtube1 from "./Youtube1.png";
+import youtube2 from "./Youtube2.jpg";
+import youtube3 from "./Youtube3.jpg";
 
 import bridal1 from "./Bridal1.png";
 import bridal2 from "./Bridal2.png";
@@ -48,6 +52,8 @@ import Bridal6 from "./Bridal/Bridal6.jpeg";
 import Bridal7 from "./Bridal/Bridal7.jpeg";
 import Bridal8 from "./Bridal/Bridal8.jpeg";
 import Bridal9 from "./Bridal/Bridal9.jpeg";
+import Bridal10 from "./Bridal/Bridal10.jpg";
+import Bridal11 from "./Bridal/Bridal11.jpg";
 
 // Photoshoot Photos
 import Photoshoot1 from "./Photoshoot/Photoshoot1.JPG";
@@ -67,6 +73,12 @@ import Photoshoot12 from "./Photoshoot/Photoshoot12.jpeg";
 import Special1 from "./Special_Occasion/Special1.jpeg";
 import Special2 from "./Special_Occasion/Special2.jpeg";
 import Special3 from "./Special_Occasion/Special3.jpeg";
+
+// Party Photos
+import Party1 from "./Party/Party1.jpg";
+import Party2 from "./Party/Party2.jpg";
+import Party3 from "./Party/Party3.jpg";
+import Party4 from "./Party/Party4.jpg";
 
 export const icons = {
   logo,
@@ -104,22 +116,24 @@ export const images = {
   bridal11,
   bridal12,
   youtube1,
+  youtube2,
+  youtube3,
 };
 
 export const homeCover = [
+  {
+    image: home3,
+    title: "BRIDAL MAKEUP",
+    desc: "We do all forms of makeup.",
+  },
   {
     image: home1,
     title: "PHOTOSHOOT MAKEUP",
     desc: "We do all forms of makeup.",
   },
-  {
-    image: home1,
-    title: "BRIDAL MAKEUP",
-    desc: "We do all forms of makeup.",
-  },
 ];
 
-export const servicesSlider = [servicesSlider1, testimonialBG];
+export const servicesSlider = [servicesSlider1, Bridal5];
 
 // export const homeTestimonial = [
 //   {
@@ -150,7 +164,7 @@ export const package_list = [
     _id: "1",
     name: "PARTY MAKEUP",
     // image: partyBasic,
-    image: homePort1,
+    image: Party2,
     price: "3,999",
     description: "Basic",
     category: ["Party"],
@@ -168,7 +182,7 @@ export const package_list = [
     _id: "3",
     name: "PARTY MAKEUP",
     // image: partyPremiumHD,
-    image: homePort3,
+    image: homePort1,
     price: "6,999",
     description: "Premium HD",
     category: ["Party"],
@@ -177,7 +191,7 @@ export const package_list = [
     _id: "4",
     name: "PARTY MAKEUP",
     // image: partyAirbrush,
-    image: homePort2,
+    image: Party3,
     price: "11,000",
     description: "Airbrush",
     category: ["Party"],
@@ -186,6 +200,7 @@ export const package_list = [
     _id: "5",
     name: "SPECIAL OCCASION MAKEUP",
     // image: specialBasic,
+    image: Photoshoot6,
     price: "9,999",
     description: "Basic",
     category: ["Special Occasion"],
@@ -194,6 +209,7 @@ export const package_list = [
     _id: "6",
     name: "SPECIAL OCCASION MAKEUP",
     // image: specialHD,
+    image: Photoshoot4,
     price: "11,999",
     description: "HD",
     category: ["Special Occasion"],
@@ -202,6 +218,7 @@ export const package_list = [
     _id: "7",
     name: "SPECIAL OCCASION MAKEUP",
     // image: specialPremiumHD,
+    image: Photoshoot7,
     price: "14,999",
     description: "Premium HD",
     category: ["Special Occasion"],
@@ -210,6 +227,7 @@ export const package_list = [
     _id: "8",
     name: "SPECIAL OCCASION MAKEUP",
     // image: specialAirbrush,
+    image: Photoshoot12,
     price: "17,999",
     description: "Airbrush",
     category: ["Special Occasion"],
@@ -218,6 +236,7 @@ export const package_list = [
     _id: "9",
     name: "BRIDAL MAKEUP",
     // image: bridalBasic,
+    image: Bridal1,
     price: "11,999",
     description: "Basic",
     category: ["Bridal"],
@@ -226,6 +245,7 @@ export const package_list = [
     _id: "10",
     name: "BRIDAL MAKEUP",
     // image: bridalHD,
+    image: Bridal3,
     price: "14,999",
     description: "HD",
     category: ["Bridal"],
@@ -234,6 +254,7 @@ export const package_list = [
     _id: "11",
     name: "BRIDAL MAKEUP",
     // image: bridalPremiumHD,
+    image: Bridal2,
     price: "17,999",
     description: "Premium HD",
     category: ["Bridal"],
@@ -242,6 +263,7 @@ export const package_list = [
     _id: "12",
     name: "BRIDAL MAKEUP",
     // image: bridalAirbrush,
+    image: Bridal8,
     price: "24,999",
     description: "Airbrush",
     category: ["Bridal"],
@@ -250,6 +272,7 @@ export const package_list = [
     _id: "13",
     name: "BRIDAL MAKEUP",
     // image: bridalHDAirbrush,
+    image: Bridal11,
     price: "29,999",
     description: "HD Airbrush",
     category: ["Bridal"],
@@ -269,6 +292,8 @@ export const bridalPhotos = {
   Bridal7,
   Bridal8,
   Bridal9,
+  Bridal10,
+  Bridal11,
 };
 
 // Photoshoot Export
@@ -292,4 +317,12 @@ export const specialOccasionPhotos = {
   Special1,
   Special2,
   Special3,
+};
+
+// Party Export
+export const partyPhotos = {
+  Party1,
+  Party2,
+  Party3,
+  Party4,
 };

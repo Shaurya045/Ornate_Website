@@ -1,5 +1,5 @@
 import React from "react";
-import { icons, images } from "../assets/asset";
+import { icons, images, bridalPhotos, photoshootPhotos } from "../assets/asset";
 import { Link } from "react-router-dom";
 
 function HomePortfolio() {
@@ -33,7 +33,7 @@ function HomePortfolio() {
         <div className="bg-black col-span-1 row-span-2 col-start-3 row-start-1">
           <img
             className="object-cover w-full h-full"
-            src={images.homePort4}
+            src={bridalPhotos.Bridal1}
             loading="lazy"
             alt=""
           />
