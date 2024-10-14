@@ -15,7 +15,7 @@ function App() {
       <div className="z-50 fixed bottom-[7%] right-[8%] flex flex-col gap-[5px]">
         <div className="phone lg:hidden">
           <div className="phone-content">
-            <a href="tel: +918210080108">
+            <a href="tel: +919199990199">
               <div className="w-[40px] h-[40px] bg-sky-400 rounded-[50%] flex flex-row justify-center items-center text-[25px] text-white ">
                 <BiSolidPhoneCall />
               </div>
@@ -25,7 +25,7 @@ function App() {
         <div className="whatsapp">
           <div className="whatsapp-content">
             <a
-              href={`https://wa.me/918210080108?text=Hi, I want to know more information for the makeup and its packages `}
+              href={`https://wa.me/919199990199?text=Hi, I want to know more information for the makeup and its packages `}
               target="_blank"
               rel="noopener noreferrer"
             >

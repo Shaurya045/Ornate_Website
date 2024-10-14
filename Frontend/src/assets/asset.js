@@ -13,6 +13,7 @@ import contact1 from "./Contact_Icon1.png";
 import home1 from "./Home_cover1.png";
 import home2 from "./Home_Cover2.PNG";
 import home3 from "./Home_Cover3.png";
+import home4 from "./Home_Cover4.png";
 import homePort1 from "./Home_Portfolio1.png";
 import homePort2 from "./Home_Portfolio2.png";
 import homePort3 from "./Home_Portfolio3.png";
@@ -122,7 +123,7 @@ export const images = {
 
 export const homeCover = [
   {
-    image: home3,
+    image: home4,
     title: "BRIDAL MAKEUP",
     desc: "We do all forms of makeup.",
   },
