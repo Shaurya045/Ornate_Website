@@ -119,7 +119,7 @@ function Footer() {
               </span>
             </li>
             <li>
-              Mobile: <span className="font-normal">(+91)91999 90199</span>
+              Mobile: <span className="font-normal">(+91)99340 59935</span>
             </li>
           </ul>
         </div>
