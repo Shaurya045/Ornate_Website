@@ -87,7 +87,7 @@ function ServiceMainBookPopUp({ setPopUp, itemName, itemPrice }) {
           </div>
         </div>
         <a
-          href={`https://wa.me/918210080108?text=Hello Ornate, I ${name} want to book a ${itemName} on ${selectedDate}. `}
+          href={`https://wa.me/919934059935?text=Hello Ornate, I ${name} want to book a ${itemName} on ${selectedDate}. `}
           target="_blank"
           rel="noopener noreferrer"
           onClick={handleBooking} // Add handleBooking here
