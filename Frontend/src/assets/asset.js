@@ -11,8 +11,8 @@ import stars from "./Stars_Icon.png";
 import contact1 from "./Contact_Icon1.png";
 
 import home1 from "./Home_cover1.png";
-import home2 from "./Home_Cover2.PNG";
-import home3 from "./Home_Cover3.png";
+// import home2 from "./Home_Cover2.PNG";
+// import home3 from "./Home_Cover3.png";
 import home4 from "./Home_Cover4.png";
 import homePort1 from "./Home_Portfolio1.png";
 import homePort2 from "./Home_Portfolio2.png";
@@ -80,6 +80,20 @@ import Party1 from "./Party/Party1.jpg";
 import Party2 from "./Party/Party2.jpg";
 import Party3 from "./Party/Party3.jpg";
 import Party4 from "./Party/Party4.jpg";
+
+// Commercial Photos
+import Commercial1 from "./Commercial/Commercial1.JPG";
+import Commercial2 from "./Commercial/Commercial2.JPEG";
+import Commercial3 from "./Commercial/Commercial3.JPEG";
+import Commercial4 from "./Commercial/Commercial4.JPEG";
+import Commercial5 from "./Commercial/Commercial5.JPEG";
+import Commercial6 from "./Commercial/Commercial6.jpg";
+import Commercial7 from "./Commercial/Commercial7.jpg";
+import Commercial8 from "./Commercial/Commercial8.jpg";
+import Commercial9 from "./Commercial/Commercial9.jpg";
+import Commercial10 from "./Commercial/Commercial10.JPG";
+import Commercial11 from "./Commercial/Commercial11.JPG";
+import Commercial12 from "./Commercial/Commercial12.JPG";
 
 export const icons = {
   logo,
@@ -326,4 +340,19 @@ export const partyPhotos = {
   Party2,
   Party3,
   Party4,
+};
+
+export const commercialPhotos = {
+  Commercial1,
+  Commercial2,
+  Commercial3,
+  Commercial4,
+  Commercial5,
+  Commercial6,
+  Commercial7,
+  Commercial8,
+  Commercial9,
+  Commercial10,
+  Commercial11,
+  Commercial12,
 };
