@@ -1,6 +1,8 @@
-import React from "react";
 import { icons } from "../assets/asset";
 import { Link, NavLink } from "react-router-dom";
+import { FaInstagram } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa6";
+import { FaWhatsapp } from "react-icons/fa6";
 
 function Footer() {
   return (
@@ -124,8 +126,34 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <div className='bg-[#4A4745] px-[100px] max-[1300px]:px-[85px] max-[580px]:px-[30px] py-[20px] text-white font-semibold font-["Raleway"] '>
-        &copy; Ornate Makeup Studio Pvt. Ltd. All Rights Reserved.
+      <div className="flex flex-row max-[728px]:flex-col max-[728px]:gap-[10px] max-[728px]:items-start items-center justify-between bg-[#4A4745] px-[100px] max-[1300px]:px-[85px] max-[580px]:px-[30px] py-[20px] ">
+        <div className='text-white font-semibold font-["Raleway"] '>
+          &copy; Ornate Makeup Studio Pvt. Ltd. All Rights Reserved.
+        </div>
+        <div className="flex flex-row gap-[20px] mt-auto ">
+          <Link
+            to="https://www.instagram.com/ornate_makeupartist/"
+            target="blank"
+          >
+            <div className="w-[25px] h-[25px] rounded-[50%] bg-black text-white flex items-center justify-center ">
+              <FaInstagram />
+            </div>
+          </Link>
+          <Link to="https://www.youtube.com/@OrnatemakeupStudio" target="blank">
+            <div className="w-[25px] h-[25px] rounded-[50%] bg-white text-black flex items-center justify-center ">
+              <FaYoutube />
+            </div>
+          </Link>
+          <a
+            href={`https://wa.me/919934059935?text=Hi, I want to know more information for the makeup and its packages `}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="w-[25px] h-[25px] rounded-[50%] bg-black text-white flex items-center justify-center ">
+              <FaWhatsapp />
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   );

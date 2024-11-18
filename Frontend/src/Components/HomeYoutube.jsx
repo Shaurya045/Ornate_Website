@@ -25,17 +25,17 @@ function HomeYoutube() {
           <div className="w-full h-[60%] rounded-t-[10px] ">
             <img
               className="w-full h-full object-cover rounded-t-[10px]"
-              src={images.youtube2}
+              src={images.youtube6}
               loading="lazy"
               alt=""
             />
           </div>
           <div className="w-full h-[39%] px-[20px] max-[470px]:px-[15px] flex flex-col gap-[20px] max-[470px]:gap-[10px] items-center ">
             <h2 className="text-[18px] max-[470px]:text-[16px] font-['Raleway'] font-semibold ">
-              Dry skin Product knowledge for beginners
+              Bridal makeup look | Payal Verma |
             </h2>
             <Link
-              to="https://www.youtube.com/watch?v=UI0t_LVPkBw"
+              to="https://www.youtube.com/watch?v=hHpS3FgiN3E"
               target="_blank"
             >
               <button className="w-[180px] h-[45px] max-[470px]:w-[150px] max-[470px]:h-[40px] max-[470px]:text-[15px] bg-[#B8AEAE] rounded-[10px] text-white font-semibold ">
@@ -48,17 +48,17 @@ function HomeYoutube() {
           <div className="w-full h-[60%] rounded-t-[10px] ">
             <img
               className="w-full h-full object-cover rounded-t-[10px]"
-              src={images.youtube3}
+              src={images.youtube5}
               loading="lazy"
               alt=""
             />
           </div>
           <div className="w-full h-[39%] px-[20px] max-[470px]:px-[15px] flex flex-col gap-[20px] max-[470px]:gap-[10px] items-center ">
             <h2 className="text-[18px] max-[470px]:text-[16px] font-['Raleway'] font-semibold ">
-              Bridal makeup look for beginner makeup artist || Payal Verma
+              Subtle makeup look | Payal Verma
             </h2>
             <Link
-              to="https://www.youtube.com/watch?v=w8YmfHVMTp0"
+              to="https://www.youtube.com/watch?v=bp2qTORnlls"
               target="_blank"
             >
               <button className="w-[180px] h-[45px] max-[470px]:w-[150px] max-[470px]:h-[40px] max-[470px]:text-[15px] bg-[#B8AEAE] rounded-[10px] text-white font-semibold ">
@@ -71,17 +71,17 @@ function HomeYoutube() {
           <div className="w-full h-[60%] rounded-t-[10px] ">
             <img
               className="w-full h-full object-cover rounded-t-[10px]"
-              src={images.youtube1}
+              src={images.youtube4}
               loading="lazy"
               alt=""
             />
           </div>
           <div className="w-full h-[39%] px-[20px] max-[470px]:px-[15px] flex flex-col gap-[20px] max-[470px]:gap-[10px] items-center ">
             <h2 className="text-[18px] max-[470px]:text-[16px] font-['Raleway'] font-semibold ">
-              Engagement makeup look by Payal Verma
+              Bridal makeup look | Payal Verma |
             </h2>
             <Link
-              to="https://www.youtube.com/watch?v=Cm8sc4DFE4A"
+              to="https://www.youtube.com/watch?v=XJa2ZxC9h5Q"
               target="_blank"
             >
               <button className="w-[180px] h-[45px] max-[470px]:w-[150px] max-[470px]:h-[40px] max-[470px]:text-[15px] bg-[#B8AEAE] rounded-[10px] text-white font-semibold ">

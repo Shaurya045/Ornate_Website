@@ -32,7 +32,8 @@
   mask-image: linear-gradient(to left, #d3bca8, rgba(211, 188, 168, 0));
 }
 
-.phone,.whatsapp {
+.phone,
+.whatsapp {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,7 +68,8 @@
   animation: radial 2s linear infinite; /* Animation applied only to the background */
 }
 
-.phone-content,.whatsapp-content {
+.phone-content,
+.whatsapp-content {
   position: relative; /* Keep the content on top */
   z-index: 60; /* Ensure content stays above the animated background */
 }
@@ -84,4 +86,22 @@
     transform: scale(0.9);
     opacity: 0.5;
   }
+}
+
+/* Customize scrollbar track */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #4a4745; /* Background of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4af37; /* Scrollbar thumb color */
+  border-radius: 4px; /* Rounded edges */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Hover effect on thumb */
 }

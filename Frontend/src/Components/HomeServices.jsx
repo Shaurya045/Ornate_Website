@@ -93,9 +93,11 @@ function HomeServices() {
                 <h2 className=" font-['Lora'] font-normal text-[35px] max-[712px]:text-[25px] text-[#4A4745] text-start ">
                   Bridal Makeup
                 </h2>
-                <button className="w-[130px] max-[712px]:w-[115px] h-[40px] bg-[#D4AF37] rounded-[10px] text-[15px] max-[712px]:text-[14px] text-white font-semibold ">
-                  BOOK NOW
-                </button>
+                <Link to="/services">
+                  <button className="w-[130px] max-[712px]:w-[115px] h-[40px] bg-[#D4AF37] rounded-[10px] text-[15px] max-[712px]:text-[14px] text-white font-semibold ">
+                    BOOK NOW
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -119,9 +121,11 @@ function HomeServices() {
                 <h2 className=" font-['Lora'] font-normal text-[35px] max-[712px]:text-[25px] text-[#4A4745] text-start ">
                   Photoshoot Makeup
                 </h2>
-                <button className="w-[130px] max-[712px]:w-[115px] h-[40px] bg-[#D4AF37] rounded-[10px] text-[15px] max-[712px]:text-[14px] text-white font-semibold ">
-                  BOOK NOW
-                </button>
+                <Link to="/services">
+                  <button className="w-[130px] max-[712px]:w-[115px] h-[40px] bg-[#D4AF37] rounded-[10px] text-[15px] max-[712px]:text-[14px] text-white font-semibold ">
+                    BOOK NOW
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -145,9 +149,11 @@ function HomeServices() {
                 <h2 className=" font-['Lora'] font-normal text-[35px] max-[712px]:text-[25px] text-[#4A4745] text-start ">
                   Party Makeup
                 </h2>
-                <button className="w-[130px] max-[712px]:w-[115px] h-[40px] bg-[#D4AF37] rounded-[10px] text-[15px] max-[712px]:text-[14px] text-white font-semibold ">
-                  BOOK NOW
-                </button>
+                <Link to="/services">
+                  <button className="w-[130px] max-[712px]:w-[115px] h-[40px] bg-[#D4AF37] rounded-[10px] text-[15px] max-[712px]:text-[14px] text-white font-semibold ">
+                    BOOK NOW
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

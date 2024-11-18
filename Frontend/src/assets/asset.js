@@ -22,9 +22,9 @@ import portfolioheadImg from "./Portfolio_HeaderImg.png";
 import trainingheadImg from "./TrainingHeadImg.png";
 import trainingaboutImg from "./TrainingAboutImg.png";
 import traininggridImg from "./TrainingGridImg.png";
-import youtube1 from "./Youtube1.png";
-import youtube2 from "./Youtube2.jpg";
-import youtube3 from "./Youtube3.jpg";
+import youtube4 from "./Youtube4.jpg";
+import youtube5 from "./Youtube5.jpg";
+import youtube6 from "./Youtube6.jpg";
 
 import bridal1 from "./Bridal1.png";
 import bridal2 from "./Bridal2.png";
@@ -130,9 +130,9 @@ export const images = {
   bridal10,
   bridal11,
   bridal12,
-  youtube1,
-  youtube2,
-  youtube3,
+  youtube4,
+  youtube5,
+  youtube6,
 };
 
 export const homeCover = [
