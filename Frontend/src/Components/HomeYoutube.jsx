@@ -25,6 +25,29 @@ function HomeYoutube() {
           <div className="w-full h-[60%] rounded-t-[10px] ">
             <img
               className="w-full h-full object-cover rounded-t-[10px]"
+              src={images.youtube7}
+              loading="lazy"
+              alt=""
+            />
+          </div>
+          <div className="w-full h-[39%] px-[20px] max-[470px]:px-[15px] flex flex-col gap-[20px] max-[470px]:gap-[10px] items-center ">
+            <h2 className="text-[18px] max-[470px]:text-[16px] font-['Raleway'] font-semibold ">
+              Bridal makeup look | Payal Verma
+            </h2>
+            <Link
+              to="https://www.youtube.com/watch?v=dvZiT2hIgE8"
+              target="_blank"
+            >
+              <button className="w-[180px] h-[45px] max-[470px]:w-[150px] max-[470px]:h-[40px] max-[470px]:text-[15px] bg-[#B8AEAE] rounded-[10px] text-white font-semibold ">
+                WATCH NOW
+              </button>
+            </Link>
+          </div>
+        </div>
+        <div className="w-[370px] h-[360px] max-[470px]:w-[300px] max-[470px]:h-[290px] bg-[#EFE6DD] rounded-[10px] flex flex-col gap-[15px] max-[470px]:gap-[5px] pb-[20px] ">
+          <div className="w-full h-[60%] rounded-t-[10px] ">
+            <img
+              className="w-full h-full object-cover rounded-t-[10px]"
               src={images.youtube6}
               loading="lazy"
               alt=""
@@ -59,29 +82,6 @@ function HomeYoutube() {
             </h2>
             <Link
               to="https://www.youtube.com/watch?v=bp2qTORnlls"
-              target="_blank"
-            >
-              <button className="w-[180px] h-[45px] max-[470px]:w-[150px] max-[470px]:h-[40px] max-[470px]:text-[15px] bg-[#B8AEAE] rounded-[10px] text-white font-semibold ">
-                WATCH NOW
-              </button>
-            </Link>
-          </div>
-        </div>
-        <div className="w-[370px] h-[360px] max-[470px]:w-[300px] max-[470px]:h-[290px] bg-[#EFE6DD] rounded-[10px] flex flex-col gap-[15px] max-[470px]:gap-[5px] pb-[20px] ">
-          <div className="w-full h-[60%] rounded-t-[10px] ">
-            <img
-              className="w-full h-full object-cover rounded-t-[10px]"
-              src={images.youtube4}
-              loading="lazy"
-              alt=""
-            />
-          </div>
-          <div className="w-full h-[39%] px-[20px] max-[470px]:px-[15px] flex flex-col gap-[20px] max-[470px]:gap-[10px] items-center ">
-            <h2 className="text-[18px] max-[470px]:text-[16px] font-['Raleway'] font-semibold ">
-              Bridal makeup look | Payal Verma |
-            </h2>
-            <Link
-              to="https://www.youtube.com/watch?v=XJa2ZxC9h5Q"
               target="_blank"
             >
               <button className="w-[180px] h-[45px] max-[470px]:w-[150px] max-[470px]:h-[40px] max-[470px]:text-[15px] bg-[#B8AEAE] rounded-[10px] text-white font-semibold ">

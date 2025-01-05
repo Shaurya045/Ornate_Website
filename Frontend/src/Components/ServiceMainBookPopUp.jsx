@@ -1,10 +1,22 @@
-import React, { useState } from "react";
+import PropTypes from "prop-types";
+import { useState } from "react";
 import { IoClose } from "react-icons/io5";
 
-function ServiceMainBookPopUp({ setPopUp, itemName, itemPrice }) {
+function ServiceMainBookPopUp({
+  setPopUp,
+  itemName,
+  itemPrice,
+  itemDescription,
+  itemCategory,
+}) {
   const [selectedDate, setSelectedDate] = useState("");
   const [name, setName] = useState("");
   const [errorMessage, setErrorMessage] = useState(""); // State to store error message
+  const calculateDiscountedPrice = (price, discount) => {
+    const numericPrice = parseInt(price.replace(/,/g, ""));
+    const discountedPrice = Math.floor(numericPrice * (1 - discount));
+    return discountedPrice.toLocaleString("en-IN");
+  };
 
   // Get today's date in the format YYYY-MM-DD
   const getTodayDate = () => {
@@ -81,9 +93,24 @@ function ServiceMainBookPopUp({ setPopUp, itemName, itemPrice }) {
             <h3 className="min-w-[25%] max-w-[25%] text-[18px] max-[600px]:text-[16px] font-semibold ">
               Price:
             </h3>
-            <h3 className="text-[16px] max-[600px]:text-[15px] font-medium">
-              Rs.{itemPrice}
-            </h3>
+            {/* {itemDescription === "HD Airbrush" &&
+            itemCategory.includes("Bridal") ? (
+              <>
+                <span className="font-['Raleway'] font-medium line-through">
+                  Rs. {itemPrice}
+                </span>
+                <span className="font-['Raleway'] font-medium text-md ml-1 text-[#D4AF37]">
+                  Rs. {calculateDiscountedPrice(itemPrice, 0.25)}
+                </span>
+                <span className="ml-1 text-md font-semibold text-[#D4AF37]">
+                  (25% off)
+                </span>
+              </>
+            ) : ( */}
+            <span className="font-['Raleway'] font-medium ">
+              Rs. {itemPrice}
+            </span>
+            {/* )} */}
           </div>
         </div>
         <a
@@ -98,10 +125,20 @@ function ServiceMainBookPopUp({ setPopUp, itemName, itemPrice }) {
         </a>
       </div>
       {errorMessage && (
-        <p className="text-red-500 text-sm mt-[20px] mx-[40px] max-[500px]:mx-[20px] ">{errorMessage}</p>
+        <p className="text-red-500 text-sm mt-[20px] mx-[40px] max-[500px]:mx-[20px] ">
+          {errorMessage}
+        </p>
       )}
     </div>
   );
 }
+
+ServiceMainBookPopUp.propTypes = {
+  setPopUp: PropTypes.func.isRequired,
+  itemName: PropTypes.string.isRequired,
+  itemPrice: PropTypes.string.isRequired,
+  itemDescription: PropTypes.string.isRequired,
+  itemCategory: PropTypes.arrayOf(PropTypes.string).isRequired, // Validate itemCategory as an array of strings
+};
 
 export default ServiceMainBookPopUp;

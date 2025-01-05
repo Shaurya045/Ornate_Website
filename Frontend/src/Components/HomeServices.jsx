@@ -88,6 +88,7 @@ function HomeServices() {
               <div className="absolute top-[3.5%] left-[2.5%] rounded-[20px] w-[95%] h-[93%] border-[2px] border-[#EFE6DD]  "></div>
               <div className="absolute bottom-[15%] left-[8%] flex flex-col items-start gap-[10px] max-w-[40%] max-[712px]:max-w-[60%] ">
                 <h3 className=" font-['Lora'] font-normal text-[30px] max-[712px]:text-[20px] text-[#F9EFD1] ">
+                  {/* <span className="text-sm">upto</span> 25% off */}
                   10% off
                 </h3>
                 <h2 className=" font-['Lora'] font-normal text-[35px] max-[712px]:text-[25px] text-[#4A4745] text-start ">

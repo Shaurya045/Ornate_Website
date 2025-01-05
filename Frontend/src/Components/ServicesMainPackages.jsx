@@ -7,6 +7,11 @@ function ServicesMainPackages() {
   const [popUp, setPopUp] = useState(false);
   const [cardUP, setCardUP] = useState(0);
   const [category, setCategory] = useState("");
+  const calculateDiscountedPrice = (price, discount) => {
+    const numericPrice = parseInt(price.replace(/,/g, ""));
+    const discountedPrice = Math.floor(numericPrice * (1 - discount));
+    return discountedPrice.toLocaleString("en-IN");
+  };
   // Utility function to determine the font size based on the name length
   const getFontSize = (name) => {
     if (name.length > 30) {
@@ -133,15 +138,31 @@ function ServicesMainPackages() {
                 >
                   {item.name}
                 </h2>
-                <p className="text-white text-[16px] font-['Raleway'] font-light ">
+                <h3 className="text-white text-[25px] font-['Raleway'] font-semibold [text-shadow:_3px_3px_8px_rgba(0,0,0,0.5)] ">
+                  {item.description}
+                </h3>
+                <p className="text-white text-center text-[16px] font-['Raleway'] font-light ">
                   Starting from{" "}
+                  {/* {item.description === "HD Airbrush" &&
+                  item.category.includes("Bridal") ? (
+                    <>
+                      <span className="font-['Raleway'] font-medium line-through">
+                        Rs. {item.price}
+                      </span>
+                      <span className="font-['Raleway'] font-semibold text-lg ml-1 text-[#D4AF37]">
+                        Rs. {calculateDiscountedPrice(item.price, 0.25)}
+                      </span>
+                      <span className="ml-1 text-lg font-semibold text-[#D4AF37]">
+                        (25% off)
+                      </span>
+                    </>
+                  ) : ( */}
                   <span className="font-['Raleway'] font-medium ">
                     Rs. {item.price}
                   </span>
+                  {/* )} */}
                 </p>
-                <h3 className="text-white text-[23px] font-['Raleway'] font-medium [text-shadow:_3px_3px_8px_rgba(0,0,0,0.5)] ">
-                  {item.description}
-                </h3>
+
                 <button
                   onClick={() => {
                     setPopUp(true);
@@ -156,6 +177,8 @@ function ServicesMainPackages() {
                     setPopUp={setPopUp}
                     itemName={item.name}
                     itemPrice={item.price}
+                    itemDescription={item.description}
+                    itemCategory={item.category}
                   />
                 )}
               </div>

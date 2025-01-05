@@ -22,9 +22,9 @@ import portfolioheadImg from "./Portfolio_HeaderImg.png";
 import trainingheadImg from "./TrainingHeadImg.png";
 import trainingaboutImg from "./TrainingAboutImg.png";
 import traininggridImg from "./TrainingGridImg.png";
-import youtube4 from "./Youtube4.jpg";
 import youtube5 from "./Youtube5.jpg";
 import youtube6 from "./Youtube6.jpg";
+import youtube7 from "./Youtube7.jpg";
 
 import bridal1 from "./Bridal1.png";
 import bridal2 from "./Bridal2.png";
@@ -55,6 +55,12 @@ import Bridal8 from "./Bridal/Bridal8.jpeg";
 import Bridal9 from "./Bridal/Bridal9.jpeg";
 import Bridal10 from "./Bridal/Bridal10.jpg";
 import Bridal11 from "./Bridal/Bridal11.jpg";
+import Bridal12 from "./Bridal/Bridal12.JPG";
+import Bridal13 from "./Bridal/Bridal13.JPG";
+import Bridal14 from "./Bridal/Bridal14.JPG";
+import Bridal15 from "./Bridal/Bridal15.JPG";
+import Bridal16 from "./Bridal/Bridal16.JPG";
+import Bridal17 from "./Bridal/Bridal17.JPG";
 
 // Photoshoot Photos
 import Photoshoot1 from "./Photoshoot/Photoshoot1.JPG";
@@ -130,9 +136,9 @@ export const images = {
   bridal10,
   bridal11,
   bridal12,
-  youtube4,
   youtube5,
   youtube6,
+  youtube7,
 };
 
 export const homeCover = [
@@ -177,120 +183,108 @@ export const serviceTestimonial = [
 export const package_list = [
   {
     _id: "1",
-    name: "PARTY MAKEUP",
-    // image: partyBasic,
-    image: Party2,
-    price: "3,999",
-    description: "Basic",
-    category: ["Party"],
+    name: "BRIDAL MAKEUP",
+    image: Bridal11,
+    price: "34,999",
+    // price: "29,999",
+    description: "HD Airbrush",
+    category: ["Bridal"],
   },
   {
     _id: "2",
-    name: "PARTY MAKEUP",
-    // image: partyHD,
-    image: homePort4,
-    price: "5,999",
-    description: "HD",
-    category: ["Party"],
-  },
-  {
-    _id: "3",
-    name: "PARTY MAKEUP",
-    // image: partyPremiumHD,
-    image: homePort1,
-    price: "6,999",
-    description: "Premium HD",
-    category: ["Party"],
-  },
-  {
-    _id: "4",
-    name: "PARTY MAKEUP",
-    // image: partyAirbrush,
-    image: Party3,
-    price: "11,000",
-    description: "Airbrush",
-    category: ["Party"],
-  },
-  {
-    _id: "5",
-    name: "SPECIAL OCCASION MAKEUP",
-    // image: specialBasic,
-    image: Photoshoot6,
-    price: "9,999",
-    description: "Basic",
-    category: ["Special Occasion"],
-  },
-  {
-    _id: "6",
-    name: "SPECIAL OCCASION MAKEUP",
-    // image: specialHD,
-    image: Photoshoot4,
-    price: "11,999",
-    description: "HD",
-    category: ["Special Occasion"],
-  },
-  {
-    _id: "7",
-    name: "SPECIAL OCCASION MAKEUP",
-    // image: specialPremiumHD,
-    image: Photoshoot7,
-    price: "14,999",
-    description: "Premium HD",
-    category: ["Special Occasion"],
-  },
-  {
-    _id: "8",
-    name: "SPECIAL OCCASION MAKEUP",
-    // image: specialAirbrush,
-    image: Photoshoot12,
-    price: "17,999",
-    description: "Airbrush",
-    category: ["Special Occasion"],
-  },
-  {
-    _id: "9",
     name: "BRIDAL MAKEUP",
-    // image: bridalBasic,
     image: Bridal1,
     price: "11,999",
     description: "Basic",
     category: ["Bridal"],
   },
   {
-    _id: "10",
+    _id: "3",
     name: "BRIDAL MAKEUP",
-    // image: bridalHD,
     image: Bridal3,
     price: "14,999",
     description: "HD",
     category: ["Bridal"],
   },
   {
-    _id: "11",
+    _id: "4",
     name: "BRIDAL MAKEUP",
-    // image: bridalPremiumHD,
     image: Bridal2,
     price: "17,999",
     description: "Premium HD",
     category: ["Bridal"],
   },
   {
-    _id: "12",
+    _id: "5",
     name: "BRIDAL MAKEUP",
-    // image: bridalAirbrush,
     image: Bridal8,
     price: "24,999",
     description: "Airbrush",
     category: ["Bridal"],
   },
   {
+    _id: "6",
+    name: "PARTY MAKEUP",
+    image: Party2,
+    price: "3,999",
+    description: "Basic",
+    category: ["Party"],
+  },
+  {
+    _id: "7",
+    name: "PARTY MAKEUP",
+    image: homePort4,
+    price: "5,999",
+    description: "HD",
+    category: ["Party"],
+  },
+  {
+    _id: "8",
+    name: "PARTY MAKEUP",
+    image: homePort1,
+    price: "6,999",
+    description: "Premium HD",
+    category: ["Party"],
+  },
+  {
+    _id: "9",
+    name: "PARTY MAKEUP",
+    image: Party3,
+    price: "11,000",
+    description: "Airbrush",
+    category: ["Party"],
+  },
+  {
+    _id: "10",
+    name: "SPECIAL OCCASION MAKEUP",
+    image: Photoshoot6,
+    price: "9,999",
+    description: "Basic",
+    category: ["Special Occasion"],
+  },
+  {
+    _id: "11",
+    name: "SPECIAL OCCASION MAKEUP",
+    image: Photoshoot4,
+    price: "11,999",
+    description: "HD",
+    category: ["Special Occasion"],
+  },
+  {
+    _id: "12",
+    name: "SPECIAL OCCASION MAKEUP",
+    image: Photoshoot7,
+    price: "14,999",
+    description: "Premium HD",
+    category: ["Special Occasion"],
+  },
+  {
     _id: "13",
-    name: "BRIDAL MAKEUP",
-    // image: bridalHDAirbrush,
-    image: Bridal11,
-    price: "29,999",
-    description: "HD Airbrush",
-    category: ["Bridal"],
+    name: "SPECIAL OCCASION MAKEUP",
+    image: Photoshoot12,
+    price: "17,999",
+    description: "Airbrush",
+    category: ["Special Occasion"],
   },
 ];
 
@@ -309,6 +303,12 @@ export const bridalPhotos = {
   Bridal9,
   Bridal10,
   Bridal11,
+  Bridal12,
+  Bridal13,
+  Bridal14,
+  Bridal15,
+  Bridal16,
+  Bridal17,
 };
 
 // Photoshoot Export

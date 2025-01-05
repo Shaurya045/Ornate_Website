@@ -50,11 +50,11 @@ function PortfolioBridal() {
         </div>
         <div
           className="bg-black col-span-1 row-span-3 duration-[0.5s] hover:scale-[1.05] "
-          onClick={() => openImage(bridalPhotos.Bridal4)}
+          onClick={() => openImage(bridalPhotos.Bridal15)}
         >
           <img
             className="object-cover w-full h-full"
-            src={bridalPhotos.Bridal4}
+            src={bridalPhotos.Bridal15}
             loading="lazy"
             alt=""
           />
@@ -72,22 +72,22 @@ function PortfolioBridal() {
         </div>
         <div
           className="bg-black col-span-1 row-span-3 col-start-3 row-start-3 duration-[0.5s] hover:scale-[1.05] "
-          onClick={() => openImage(bridalPhotos.Bridal8)}
+          onClick={() => openImage(bridalPhotos.Bridal14)}
         >
           <img
             className="object-cover w-full h-full"
-            src={bridalPhotos.Bridal8}
+            src={bridalPhotos.Bridal14}
             loading="lazy"
             alt=""
           />
         </div>
         <div
           className="bg-black col-span-1 row-span-3 duration-[0.5s] hover:scale-[1.05] "
-          onClick={() => openImage(bridalPhotos.Bridal6)}
+          onClick={() => openImage(bridalPhotos.Bridal12)}
         >
           <img
             className="object-cover w-full h-full"
-            src={bridalPhotos.Bridal6}
+            src={bridalPhotos.Bridal12}
             loading="lazy"
             alt=""
           />
@@ -127,11 +127,11 @@ function PortfolioBridal() {
         </div>
         <div
           className="bg-black col-span-1 row-span-2 duration-[0.5s] hover:scale-[1.05] "
-          onClick={() => openImage(images.bridal10)}
+          onClick={() => openImage(bridalPhotos.Bridal13)}
         >
           <img
             className="object-cover w-full h-full"
-            src={images.bridal10}
+            src={bridalPhotos.Bridal13}
             loading="lazy"
             alt=""
           />
