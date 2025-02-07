@@ -97,7 +97,7 @@ function Footer() {
             </li>
             <li>
               <NavLink
-                to="/termscondition"
+                to="/termsconditions"
                 className={({ isActive }) =>
                   `${
                     isActive ? "text-[#4A4745]" : "text-white"

@@ -19,6 +19,8 @@ import PortfolioPhoto from "./Components/PortfolioPhoto.jsx";
 import ServicesTraning from "./Components/ServicesTraning.jsx";
 import ServicesMain from "./Components/ServicesMain.jsx";
 import PortfolioCommercial from "./Components/PortfolioCommercial.jsx";
+import Privacy from "./Pages/Privacy.jsx";
+import Conditions from "./Pages/Conditions.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -36,6 +38,8 @@ const router = createBrowserRouter(
         <Route path="photoshoot" element={<PortfolioPhoto />} />
         <Route path="commercial" element={<PortfolioCommercial />} />
       </Route>
+      <Route path="privacypolicy" element={<Privacy />} />
+      <Route path="termsconditions" element={<Conditions />} />
     </Route>
   )
 );
