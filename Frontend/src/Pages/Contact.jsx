@@ -89,7 +89,7 @@ function Contact() {
           <div className="flex flex-col gap-[40px] max-[540px]:gap-[25px] text-white">
             <div className="flex flex-row gap-[10px] items-center max-[540px]:text-[14px] ">
               <BiSolidPhoneCall />
-              <p>(+91)99340 59935</p>
+              <p>(+91)91999 98766</p>
             </div>
             <div className="flex flex-row gap-[10px] items-center max-[540px]:text-[14px] ">
               <IoMdMail />
